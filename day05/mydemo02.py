@@ -1,7 +1,8 @@
-test_list = [23,3,4,5,6,6,88,85,7,856,34]
-test_list.sort(reverse=True)
+test_tuple = (1,'a','zhang','b','c')
 
-print(test_list)
+print("元组的id=", id(test_tuple))
 
-new_list = sorted(test_list)
-print(new_list)
+l1 = test_tuple[-2]
+print(l1)
+l1 = '444'
+print(l1)
