@@ -1,0 +1,14 @@
+INFO     py52:handle_setup_sql.py:39 开始执行前置sql
+INFO     py52:handle_setup_sql.py:40 入参数据类型:<class 'NoneType'>参数:None
+INFO     py52:handle_setup_sql.py:62 sql_list为空，不需要执行前置sql去获取数据
+INFO     py52:handle_replace.py:46 开始执行请求参数替换
+INFO     py52:handle_replace.py:47 入参数据类型:<class 'str'>,入参:{
+   "payType": 3,
+    "orderNumbers": "#orderNumbers#"
+ }
+INFO     py52:handle_replace.py:80 替换请求参数后，返回json数据：{'payType': 3, 'orderNumbers': '1575104174230867968'}
+INFO     py52:handle_replace.py:93 开始执行sql语句替换方法replace_sql
+INFO     py52:handle_replace.py:98 sql语句需要进行参数替换
+INFO     py52:handle_replace.py:102 替换之前sql:select count(*) from tz_order where order_number = '#orderNumbers#'
+INFO     py52:handle_replace.py:104 替换之后sql:select count(*) from tz_order where order_number = '1575104174230867968'
+INFO     py52:handle_replace.py:109 返回的sql:select count(*) from tz_order where order_number = '1575104174230867968'

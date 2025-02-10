@@ -1,0 +1,352 @@
+>>>2022-09-28 20:28:26,271-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-28 20:28:26,272-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-28 20:28:26,272-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-28 20:28:26,272-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-28 20:28:26,272-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "principal": "18820992515",
+   "credentials": "123456",
+   "appType": 3,
+   "loginType": 0
+        } 
+>>>2022-09-28 20:28:26,272-py52-INFO-handle_replace.py: 不需要替换请求参数，直接返回json数据：{'principal': '18820992515', 'credentials': '123456', 'appType': 3, 'loginType': 0} 
+>>>2022-09-28 20:28:26,502-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-28 20:28:26,502-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-28 20:28:26,502-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-28 20:28:26,502-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-28 20:28:26,502-py52-INFO-handle_replace.py: 入参数据类型:<class 'NoneType'>,入参:None 
+>>>2022-09-28 20:28:26,502-py52-INFO-handle_replace.py: 请求参数为空，不需要替换参数 
+>>>2022-09-28 20:28:26,585-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-28 20:28:26,585-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'str'>参数:["select seckill_sku_id from tz_seckill_sku where seckill_stocks>0 and seckill_id in (select seckill_id from tz_seckill where max_num = -1 and  status = 1 and seckill_total_stocks > 0 and seckill_origin_stocks > 0) order by seckill_sku_id desc  limit 1"] 
+>>>2022-09-28 20:28:26,585-py52-INFO-handle_setup_sql.py: sql_list不为空，需要执行前置sql语句 
+>>>2022-09-28 20:28:26,586-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-28 20:28:26,586-py52-INFO-handle_replace.py: sql语句不需要替换数据 
+>>>2022-09-28 20:28:26,586-py52-INFO-handle_replace.py: 返回的sql:select seckill_sku_id from tz_seckill_sku where seckill_stocks>0 and seckill_id in (select seckill_id from tz_seckill where max_num = -1 and  status = 1 and seckill_total_stocks > 0 and seckill_origin_stocks > 0) order by seckill_sku_id desc  limit 1 
+>>>2022-09-28 20:28:26,624-py52-INFO-handle_setup_sql.py: 前置sql执行结果[{'seckill_sku_id': 214}] 
+>>>2022-09-28 20:28:26,624-py52-INFO-handle_setup_sql.py: 前置sql设置全局变量key=seckill_sku_id,value=214 
+>>>2022-09-28 20:28:26,624-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-28 20:28:26,624-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+            "addrId": 0,
+            "prodCount": 1,
+            "seckillSkuId": "#seckill_sku_id#"
+} 
+>>>2022-09-28 20:28:26,624-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'addrId': 0, 'prodCount': 1, 'seckillSkuId': '214'} 
+>>>2022-09-28 20:28:26,709-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-28 20:28:26,709-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-28 20:28:26,709-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-28 20:28:26,709-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-28 20:28:26,709-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+ "orderShopParam": {
+   "remarks": "",
+    "shopId": 1
+      },
+ "orderPath": "#order_path#"
+ } 
+>>>2022-09-28 20:28:26,721-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-28 20:28:26,721-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-28 20:28:26,721-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-28 20:28:26,721-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-28 20:28:26,721-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "payType": 3,
+    "orderNumbers": "#orderNumbers#"
+ } 
+>>>2022-09-28 20:28:26,733-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-28 20:28:26,734-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-28 20:28:26,734-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-28 20:28:26,734-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-28 20:28:26,734-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+"payNo":"#orderNumbers#",
+"bizPayNo":"#time#",
+ "isPaySuccess":true
+ } 
+>>>2022-09-28 20:39:59,228-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-28 20:39:59,228-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-28 20:39:59,228-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-28 20:39:59,228-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-28 20:39:59,228-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "principal": "18820992515",
+   "credentials": "123456",
+   "appType": 3,
+   "loginType": 0
+        } 
+>>>2022-09-28 20:39:59,228-py52-INFO-handle_replace.py: 不需要替换请求参数，直接返回json数据：{'principal': '18820992515', 'credentials': '123456', 'appType': 3, 'loginType': 0} 
+>>>2022-09-28 20:39:59,453-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-28 20:39:59,453-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-28 20:39:59,453-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-28 20:39:59,453-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-28 20:39:59,453-py52-INFO-handle_replace.py: 入参数据类型:<class 'NoneType'>,入参:None 
+>>>2022-09-28 20:39:59,454-py52-INFO-handle_replace.py: 请求参数为空，不需要替换参数 
+>>>2022-09-28 20:39:59,572-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-28 20:39:59,572-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'str'>参数:["select seckill_sku_id from tz_seckill_sku where seckill_stocks>0 and seckill_id in (select seckill_id from tz_seckill where max_num = -1 and  status = 1 and seckill_total_stocks > 0 and seckill_origin_stocks > 0) order by seckill_sku_id desc  limit 1"] 
+>>>2022-09-28 20:39:59,572-py52-INFO-handle_setup_sql.py: sql_list不为空，需要执行前置sql语句 
+>>>2022-09-28 20:39:59,572-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-28 20:39:59,572-py52-INFO-handle_replace.py: sql语句不需要替换数据 
+>>>2022-09-28 20:39:59,572-py52-INFO-handle_replace.py: 返回的sql:select seckill_sku_id from tz_seckill_sku where seckill_stocks>0 and seckill_id in (select seckill_id from tz_seckill where max_num = -1 and  status = 1 and seckill_total_stocks > 0 and seckill_origin_stocks > 0) order by seckill_sku_id desc  limit 1 
+>>>2022-09-28 20:39:59,603-py52-INFO-handle_setup_sql.py: 前置sql执行结果[{'seckill_sku_id': 214}] 
+>>>2022-09-28 20:39:59,603-py52-INFO-handle_setup_sql.py: 前置sql设置全局变量key=seckill_sku_id,value=214 
+>>>2022-09-28 20:39:59,603-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-28 20:39:59,604-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+            "addrId": 0,
+            "prodCount": 1,
+            "seckillSkuId": "#seckill_sku_id#"
+} 
+>>>2022-09-28 20:39:59,605-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'addrId': 0, 'prodCount': 1, 'seckillSkuId': '214'} 
+>>>2022-09-28 20:39:59,817-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-28 20:39:59,817-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-28 20:39:59,817-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-28 20:39:59,817-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-28 20:39:59,817-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+ "orderShopParam": {
+   "remarks": "",
+    "shopId": 1
+      },
+ "orderPath": "#order_path#"
+ } 
+>>>2022-09-28 20:39:59,817-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'orderShopParam': {'remarks': '', 'shopId': 1}, 'orderPath': '3E3qZwBXizW'} 
+>>>2022-09-28 20:40:00,043-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-28 20:40:00,043-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-28 20:40:00,043-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-28 20:40:00,043-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-28 20:40:00,043-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "payType": 3,
+    "orderNumbers": "#orderNumbers#"
+ } 
+>>>2022-09-28 20:40:00,043-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'payType': 3, 'orderNumbers': '1575103025650077696'} 
+>>>2022-09-28 20:40:00,570-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-28 20:40:00,570-py52-INFO-handle_replace.py: sql语句需要进行参数替换 
+>>>2022-09-28 20:40:00,570-py52-INFO-handle_replace.py: 替换之前sql:select count(*) from tz_order where order_number = '#orderNumbers#' 
+>>>2022-09-28 20:40:00,570-py52-INFO-handle_replace.py: 替换之后sql:select count(*) from tz_order where order_number = '1575103025650077696' 
+>>>2022-09-28 20:40:00,570-py52-INFO-handle_replace.py: 返回的sql:select count(*) from tz_order where order_number = '1575103025650077696' 
+>>>2022-09-28 20:40:00,604-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-28 20:40:00,604-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-28 20:40:00,604-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-28 20:40:00,605-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-28 20:40:00,605-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+"payNo":"#orderNumbers#",
+"bizPayNo":"#time#",
+ "isPaySuccess":true
+ } 
+>>>2022-09-28 20:40:00,605-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'payNo': '1575103025650077696', 'bizPayNo': '1664368800605', 'isPaySuccess': True} 
+>>>2022-09-28 20:40:00,898-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-28 20:40:00,898-py52-INFO-handle_replace.py: sql语句需要进行参数替换 
+>>>2022-09-28 20:40:00,898-py52-INFO-handle_replace.py: 替换之前sql:select status from tz_order where order_number = '#orderNumbers#' 
+>>>2022-09-28 20:40:00,898-py52-INFO-handle_replace.py: 替换之后sql:select status from tz_order where order_number = '1575103025650077696' 
+>>>2022-09-28 20:40:00,898-py52-INFO-handle_replace.py: 返回的sql:select status from tz_order where order_number = '1575103025650077696' 
+>>>2022-09-28 20:42:03,771-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-28 20:42:03,771-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-28 20:42:03,771-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-28 20:42:03,772-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-28 20:42:03,772-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "principal": "18820992515",
+   "credentials": "123456",
+   "appType": 3,
+   "loginType": 0
+        } 
+>>>2022-09-28 20:42:03,772-py52-INFO-handle_replace.py: 不需要替换请求参数，直接返回json数据：{'principal': '18820992515', 'credentials': '123456', 'appType': 3, 'loginType': 0} 
+>>>2022-09-28 20:42:03,963-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-28 20:42:03,963-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-28 20:42:03,963-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-28 20:42:03,963-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-28 20:42:03,963-py52-INFO-handle_replace.py: 入参数据类型:<class 'NoneType'>,入参:None 
+>>>2022-09-28 20:42:03,964-py52-INFO-handle_replace.py: 请求参数为空，不需要替换参数 
+>>>2022-09-28 20:42:04,084-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-28 20:42:04,084-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'str'>参数:["select seckill_sku_id from tz_seckill_sku where seckill_stocks>0 and seckill_id in (select seckill_id from tz_seckill where max_num = -1 and  status = 1 and seckill_total_stocks > 0 and seckill_origin_stocks > 0) order by seckill_sku_id desc  limit 1"] 
+>>>2022-09-28 20:42:04,084-py52-INFO-handle_setup_sql.py: sql_list不为空，需要执行前置sql语句 
+>>>2022-09-28 20:42:04,084-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-28 20:42:04,084-py52-INFO-handle_replace.py: sql语句不需要替换数据 
+>>>2022-09-28 20:42:04,084-py52-INFO-handle_replace.py: 返回的sql:select seckill_sku_id from tz_seckill_sku where seckill_stocks>0 and seckill_id in (select seckill_id from tz_seckill where max_num = -1 and  status = 1 and seckill_total_stocks > 0 and seckill_origin_stocks > 0) order by seckill_sku_id desc  limit 1 
+>>>2022-09-28 20:42:04,113-py52-INFO-handle_setup_sql.py: 前置sql执行结果[{'seckill_sku_id': 214}] 
+>>>2022-09-28 20:42:04,113-py52-INFO-handle_setup_sql.py: 前置sql设置全局变量key=seckill_sku_id,value=214 
+>>>2022-09-28 20:42:04,113-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-28 20:42:04,113-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+            "addrId": 0,
+            "prodCount": 1,
+            "seckillSkuId": "#seckill_sku_id#"
+} 
+>>>2022-09-28 20:42:04,113-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'addrId': 0, 'prodCount': 1, 'seckillSkuId': '214'} 
+>>>2022-09-28 20:42:04,301-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-28 20:42:04,301-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-28 20:42:04,301-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-28 20:42:04,301-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-28 20:42:04,301-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+ "orderShopParam": {
+   "remarks": "",
+    "shopId": 1
+      },
+ "orderPath": "#order_path#"
+ } 
+>>>2022-09-28 20:42:04,301-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'orderShopParam': {'remarks': '', 'shopId': 1}, 'orderPath': '3E3rdegemS8'} 
+>>>2022-09-28 20:42:04,557-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-28 20:42:04,557-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-28 20:42:04,557-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-28 20:42:04,557-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-28 20:42:04,557-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "payType": 3,
+    "orderNumbers": "#orderNumbers#"
+ } 
+>>>2022-09-28 20:42:04,557-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'payType': 3, 'orderNumbers': '1575103547878674432'} 
+>>>2022-09-28 20:42:05,059-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-28 20:42:05,059-py52-INFO-handle_replace.py: sql语句需要进行参数替换 
+>>>2022-09-28 20:42:05,059-py52-INFO-handle_replace.py: 替换之前sql:select count(*) from tz_order where order_number = '#orderNumbers#' 
+>>>2022-09-28 20:42:05,059-py52-INFO-handle_replace.py: 替换之后sql:select count(*) from tz_order where order_number = '1575103547878674432' 
+>>>2022-09-28 20:42:05,059-py52-INFO-handle_replace.py: 返回的sql:select count(*) from tz_order where order_number = '1575103547878674432' 
+>>>2022-09-28 20:42:05,107-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-28 20:42:05,107-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-28 20:42:05,107-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-28 20:42:05,107-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-28 20:42:05,107-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+"payNo":"#orderNumbers#",
+"bizPayNo":"#time#",
+ "isPaySuccess":true
+ } 
+>>>2022-09-28 20:42:05,107-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'payNo': '1575103547878674432', 'bizPayNo': '1664368925107', 'isPaySuccess': True} 
+>>>2022-09-28 20:42:05,374-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-28 20:42:05,374-py52-INFO-handle_replace.py: sql语句需要进行参数替换 
+>>>2022-09-28 20:42:05,374-py52-INFO-handle_replace.py: 替换之前sql:select status from tz_order where order_number = '#orderNumbers#' 
+>>>2022-09-28 20:42:05,374-py52-INFO-handle_replace.py: 替换之后sql:select status from tz_order where order_number = '1575103547878674432' 
+>>>2022-09-28 20:42:05,374-py52-INFO-handle_replace.py: 返回的sql:select status from tz_order where order_number = '1575103547878674432' 
+>>>2022-09-28 20:43:55,849-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-28 20:43:55,849-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-28 20:43:55,849-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-28 20:43:55,850-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-28 20:43:55,850-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "principal": "18820992515",
+   "credentials": "123456",
+   "appType": 3,
+   "loginType": 0
+        } 
+>>>2022-09-28 20:43:55,850-py52-INFO-handle_replace.py: 不需要替换请求参数，直接返回json数据：{'principal': '18820992515', 'credentials': '123456', 'appType': 3, 'loginType': 0} 
+>>>2022-09-28 20:43:56,035-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-28 20:43:56,036-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-28 20:43:56,036-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-28 20:43:56,036-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-28 20:43:56,036-py52-INFO-handle_replace.py: 入参数据类型:<class 'NoneType'>,入参:None 
+>>>2022-09-28 20:43:56,036-py52-INFO-handle_replace.py: 请求参数为空，不需要替换参数 
+>>>2022-09-28 20:43:56,159-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-28 20:43:56,159-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'str'>参数:["select seckill_sku_id from tz_seckill_sku where seckill_stocks>0 and seckill_id in (select seckill_id from tz_seckill where max_num = -1 and  status = 1 and seckill_total_stocks > 0 and seckill_origin_stocks > 0) order by seckill_sku_id desc  limit 1"] 
+>>>2022-09-28 20:43:56,159-py52-INFO-handle_setup_sql.py: sql_list不为空，需要执行前置sql语句 
+>>>2022-09-28 20:43:56,159-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-28 20:43:56,159-py52-INFO-handle_replace.py: sql语句不需要替换数据 
+>>>2022-09-28 20:43:56,159-py52-INFO-handle_replace.py: 返回的sql:select seckill_sku_id from tz_seckill_sku where seckill_stocks>0 and seckill_id in (select seckill_id from tz_seckill where max_num = -1 and  status = 1 and seckill_total_stocks > 0 and seckill_origin_stocks > 0) order by seckill_sku_id desc  limit 1 
+>>>2022-09-28 20:43:56,193-py52-INFO-handle_setup_sql.py: 前置sql执行结果[{'seckill_sku_id': 214}] 
+>>>2022-09-28 20:43:56,193-py52-INFO-handle_setup_sql.py: 前置sql设置全局变量key=seckill_sku_id,value=214 
+>>>2022-09-28 20:43:56,193-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-28 20:43:56,193-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+            "addrId": 0,
+            "prodCount": 1,
+            "seckillSkuId": "#seckill_sku_id#"
+} 
+>>>2022-09-28 20:43:56,194-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'addrId': 0, 'prodCount': 1, 'seckillSkuId': '214'} 
+>>>2022-09-28 20:43:56,400-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-28 20:43:56,400-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-28 20:43:56,400-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-28 20:43:56,400-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-28 20:43:56,400-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+ "orderShopParam": {
+   "remarks": "",
+    "shopId": 1
+      },
+ "orderPath": "#order_path#"
+ } 
+>>>2022-09-28 20:43:56,400-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'orderShopParam': {'remarks': '', 'shopId': 1}, 'orderPath': '3E3rrAu2VDs'} 
+>>>2022-09-28 20:43:56,564-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-28 20:43:56,564-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-28 20:43:56,564-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-28 20:43:56,564-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-28 20:43:56,564-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "payType": 3,
+    "orderNumbers": "#orderNumbers#"
+ } 
+>>>2022-09-28 20:43:56,564-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'payType': 3, 'orderNumbers': '1575104017716219904'} 
+>>>2022-09-28 20:43:57,127-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-28 20:43:57,127-py52-INFO-handle_replace.py: sql语句需要进行参数替换 
+>>>2022-09-28 20:43:57,127-py52-INFO-handle_replace.py: 替换之前sql:select count(*) from tz_order where order_number = '#orderNumbers#' 
+>>>2022-09-28 20:43:57,127-py52-INFO-handle_replace.py: 替换之后sql:select count(*) from tz_order where order_number = '1575104017716219904' 
+>>>2022-09-28 20:43:57,127-py52-INFO-handle_replace.py: 返回的sql:select count(*) from tz_order where order_number = '1575104017716219904' 
+>>>2022-09-28 20:43:57,167-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-28 20:43:57,167-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-28 20:43:57,167-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-28 20:43:57,167-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-28 20:43:57,167-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+"payNo":"#orderNumbers#",
+"bizPayNo":"#time#",
+ "isPaySuccess":true
+ } 
+>>>2022-09-28 20:43:57,167-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'payNo': '1575104017716219904', 'bizPayNo': '1664369037167', 'isPaySuccess': True} 
+>>>2022-09-28 20:43:57,428-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-28 20:43:57,428-py52-INFO-handle_replace.py: sql语句需要进行参数替换 
+>>>2022-09-28 20:43:57,429-py52-INFO-handle_replace.py: 替换之前sql:select status from tz_order where order_number = '#orderNumbers#' 
+>>>2022-09-28 20:43:57,429-py52-INFO-handle_replace.py: 替换之后sql:select status from tz_order where order_number = '1575104017716219904' 
+>>>2022-09-28 20:43:57,429-py52-INFO-handle_replace.py: 返回的sql:select status from tz_order where order_number = '1575104017716219904' 
+>>>2022-09-28 20:44:33,108-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-28 20:44:33,108-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-28 20:44:33,108-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-28 20:44:33,108-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-28 20:44:33,108-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "principal": "18820992515",
+   "credentials": "123456",
+   "appType": 3,
+   "loginType": 0
+        } 
+>>>2022-09-28 20:44:33,108-py52-INFO-handle_replace.py: 不需要替换请求参数，直接返回json数据：{'principal': '18820992515', 'credentials': '123456', 'appType': 3, 'loginType': 0} 
+>>>2022-09-28 20:44:33,304-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-28 20:44:33,304-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-28 20:44:33,304-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-28 20:44:33,305-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-28 20:44:33,305-py52-INFO-handle_replace.py: 入参数据类型:<class 'NoneType'>,入参:None 
+>>>2022-09-28 20:44:33,305-py52-INFO-handle_replace.py: 请求参数为空，不需要替换参数 
+>>>2022-09-28 20:44:33,421-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-28 20:44:33,421-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'str'>参数:["select seckill_sku_id from tz_seckill_sku where seckill_stocks>0 and seckill_id in (select seckill_id from tz_seckill where max_num = -1 and  status = 1 and seckill_total_stocks > 0 and seckill_origin_stocks > 0) order by seckill_sku_id desc  limit 1"] 
+>>>2022-09-28 20:44:33,421-py52-INFO-handle_setup_sql.py: sql_list不为空，需要执行前置sql语句 
+>>>2022-09-28 20:44:33,421-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-28 20:44:33,421-py52-INFO-handle_replace.py: sql语句不需要替换数据 
+>>>2022-09-28 20:44:33,421-py52-INFO-handle_replace.py: 返回的sql:select seckill_sku_id from tz_seckill_sku where seckill_stocks>0 and seckill_id in (select seckill_id from tz_seckill where max_num = -1 and  status = 1 and seckill_total_stocks > 0 and seckill_origin_stocks > 0) order by seckill_sku_id desc  limit 1 
+>>>2022-09-28 20:44:33,453-py52-INFO-handle_setup_sql.py: 前置sql执行结果[{'seckill_sku_id': 214}] 
+>>>2022-09-28 20:44:33,453-py52-INFO-handle_setup_sql.py: 前置sql设置全局变量key=seckill_sku_id,value=214 
+>>>2022-09-28 20:44:33,453-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-28 20:44:33,453-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+            "addrId": 0,
+            "prodCount": 1,
+            "seckillSkuId": "#seckill_sku_id#"
+} 
+>>>2022-09-28 20:44:33,453-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'addrId': 0, 'prodCount': 1, 'seckillSkuId': '214'} 
+>>>2022-09-28 20:44:33,651-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-28 20:44:33,651-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-28 20:44:33,651-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-28 20:44:33,652-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-28 20:44:33,652-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+ "orderShopParam": {
+   "remarks": "",
+    "shopId": 1
+      },
+ "orderPath": "#order_path#"
+ } 
+>>>2022-09-28 20:44:33,652-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'orderShopParam': {'remarks': '', 'shopId': 1}, 'orderPath': '3E3rvGAGziG'} 
+>>>2022-09-28 20:44:33,887-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-28 20:44:33,887-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-28 20:44:33,887-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-28 20:44:33,888-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-28 20:44:33,888-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "payType": 3,
+    "orderNumbers": "#orderNumbers#"
+ } 
+>>>2022-09-28 20:44:33,888-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'payType': 3, 'orderNumbers': '1575104174230867968'} 
+>>>2022-09-28 20:44:34,342-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-28 20:44:34,343-py52-INFO-handle_replace.py: sql语句需要进行参数替换 
+>>>2022-09-28 20:44:34,343-py52-INFO-handle_replace.py: 替换之前sql:select count(*) from tz_order where order_number = '#orderNumbers#' 
+>>>2022-09-28 20:44:34,343-py52-INFO-handle_replace.py: 替换之后sql:select count(*) from tz_order where order_number = '1575104174230867968' 
+>>>2022-09-28 20:44:34,343-py52-INFO-handle_replace.py: 返回的sql:select count(*) from tz_order where order_number = '1575104174230867968' 
+>>>2022-09-28 20:44:34,377-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-28 20:44:34,377-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-28 20:44:34,377-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-28 20:44:34,377-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-28 20:44:34,377-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+"payNo":"#orderNumbers#",
+"bizPayNo":"#time#",
+ "isPaySuccess":true
+ } 
+>>>2022-09-28 20:44:34,377-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'payNo': '1575104174230867968', 'bizPayNo': '1664369074377', 'isPaySuccess': True} 
+>>>2022-09-28 20:44:34,623-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-28 20:44:34,623-py52-INFO-handle_replace.py: sql语句需要进行参数替换 
+>>>2022-09-28 20:44:34,624-py52-INFO-handle_replace.py: 替换之前sql:select status from tz_order where order_number = '#orderNumbers#' 
+>>>2022-09-28 20:44:34,624-py52-INFO-handle_replace.py: 替换之后sql:select status from tz_order where order_number = '1575104174230867968' 
+>>>2022-09-28 20:44:34,624-py52-INFO-handle_replace.py: 返回的sql:select status from tz_order where order_number = '1575104174230867968' 

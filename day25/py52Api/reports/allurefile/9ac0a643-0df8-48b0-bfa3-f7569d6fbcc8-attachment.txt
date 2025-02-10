@@ -1,0 +1,12 @@
+INFO     py52:handle_setup_sql.py:39 开始执行前置sql
+INFO     py52:handle_setup_sql.py:40 入参数据类型:<class 'NoneType'>参数:None
+INFO     py52:handle_setup_sql.py:62 sql_list为空，不需要执行前置sql去获取数据
+INFO     py52:handle_replace.py:46 开始执行请求参数替换
+INFO     py52:handle_replace.py:47 入参数据类型:<class 'str'>,入参:{
+ "orderShopParam": {
+   "remarks": "",
+    "shopId": 1
+      },
+ "orderPath": "#order_path#"
+ }
+INFO     py52:handle_replace.py:80 替换请求参数后，返回json数据：{'orderShopParam': {'remarks': '', 'shopId': 1}, 'orderPath': '3E3rvGAGziG'}
