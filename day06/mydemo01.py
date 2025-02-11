@@ -1,10 +1,5 @@
-test_set = {1,23,4,5,65,7,'a',"sdfsdfs",3354,'c'}
+test_list = [1,2,3,4,4,68,'a']
 
-test_set.add('edit')
+test_set = {1,2,3,4,5,6,7}
 
-for i in test_set:
-    print(i)
-
-
-test_set.update("tom")
-print(test_set)
+print(set(test_list))
