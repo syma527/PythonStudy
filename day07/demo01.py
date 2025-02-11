@@ -39,7 +39,7 @@ RSA非对称加密
 result = sorted(test_dict.items(),key=operator.itemgetter(1))
 operator.itemgetter(1)
 0: 根据key排序
-1: 根据value排序
+1: 根据value排序s
 import operator
 result = sorted(test_dict.items(),key=operator.itemgetter(0),reverse=True)
 # 通过operator。itemgetter获取items，然后去遍历item。如果是0 根据key排序，如果是1 根据value排序，reverse = true
