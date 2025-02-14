@@ -5,5 +5,3 @@ def test():
 for i in range(3):
     print("外层循环")
     test()
-
-test()
