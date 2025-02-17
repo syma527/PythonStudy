@@ -1,7 +1,13 @@
-def test():
-    for j in range(3):
-        print("py52")
+def test01():
 
-for i in range(3):
-    print("外层循环")
-    test()
+    num = 10
+    print("test01")
+    print(num)
+
+def test02():
+    test01()
+    print("test02")
+    print(num)
+
+
+test02()
