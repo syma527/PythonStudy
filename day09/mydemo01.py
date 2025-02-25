@@ -1,13 +1,5 @@
-def test01():
+test_list  = [1,23,4,5,6]
 
-    num = 10
-    print("test01")
-    print(num)
+result = enumerate(test_list)
+print(dict(result))
 
-def test02():
-    test01()
-    print("test02")
-    print(num)
-
-
-test02()

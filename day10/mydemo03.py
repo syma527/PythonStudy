@@ -1,14 +1,11 @@
-class Car:
-    def __init__(self,name,color):
-        self.name = name
-        self.color = color
+import traceback
+num = 10
+try:
+    print("可能报错的代码放这里")
+    print(num1)
 
-    def test_01(self):
-        print(self.name,"车子开走了")
-
-    def test_02(self):
-        print(self.name,"车子刹车了")
-
-car = Car(name="benz",color="grey")
-
-car.test_01()
+except Exception as e:
+    print("报错后的代码放这里")
+    #手动抛出异常
+    raise AssertionError("py31")
+   # raise Exception("手动抛出的异常")

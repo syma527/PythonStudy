@@ -73,7 +73,7 @@ except Exception as e :
     print("报错之后执行的代码放这里")
     #手动抛出异常
     raise AssertionError("py51")
-    raise Exception("手动抛出的异常")
+    #raise Exception("手动抛出的异常")
 
 
 

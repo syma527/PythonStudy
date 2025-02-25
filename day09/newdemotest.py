@@ -1,6 +1,11 @@
-def test01(x):
-    return x * 2
+test_list = [1,33,45,6]
+result = dict(list(enumerate(test_list)))
 
+new_dict = {}
 
-result = map(test01, [3, 5, 7])
-print(list(result))
+for key,val in result.items():
+    print(key,val)
+    new_dict[key] = val
+
+print(new_dict)
+

@@ -52,17 +52,10 @@ print(result)
 
 
 """
-import re
 
 
 
 
-# test_str = "jakdjflakdjf@1927@dfadf5677adfdfadf"
-#字符串的匹配  找规律  设计正则查找的数据结构的规律
-test_str = "jakdjf@lakdjf@1927dfadf5677adfdfadf"
-ss = "@(\w.+)@"
-result = re.findall(ss,test_str)
-print(result)
 
 
 
