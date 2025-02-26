@@ -9,8 +9,8 @@ Site: http://www.lemonban.com
 Forum: http://testingpai.com 
 ============================
 """
-from demo01 import Demo
 
+from demo01 import Demo
 cl = Demo()
 cl.test_01()
 

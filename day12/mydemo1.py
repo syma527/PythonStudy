@@ -1,81 +1,33 @@
-"""
-class Demo:
-    def __init__(self):
-        print("构造方法")
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
 
-    def test01(self, name):
-        self.name = name
-        print("实例方法")
-        print(self.name)
+    def draw(self):
+        print(f"Drawing a circle with radius {self.radius}")
 
-fir = Demo()
-fir.test01("zhangsan")
-"""
-"""
-class Demo1:
-    def test01(self):
-        print("这是一个实例方法1")
+class Rectangle:
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
 
-    def test02(self):
-        print("这是一个实例方法2")
-        self.test01()
-fir = Demo1()
-fir.test02()
+    def draw(self):
+        print(f"Drawing a rectangle with width {self.width} and height {self.height}")
+        return self.height * self.width
 
-class Demo2:
-    def __init__(self,age):
-        self.age = age
-        print("调用构造方法")
-
-    def test01(self):
-        print("实例方法1")
-
-    def test02(self):
-        print("实例方法2")
-        self.test01()
-
-    @classmethod
-    def test03(cls):
-        print("调用一下类方法")
-
+class ShapeFactory:
     @staticmethod
-    def test04():
-        print("这是一个静态方法")
+    def create_shape(shape_type, *args):
+        if shape_type == "Circle":
+            return Circle(*args)
+        elif shape_type == "rectangle":
+            return Rectangle(*args)
+        else:
+            raise ValueError("Unknown shape type")
 
-cl = Demo2("zhangsan")
-cl.test02()
-cl.test03()
-cl.test04()
-Demo2.test03()
-Demo
+shape1 = ShapeFactory.create_shape("Circle", 5)
 
+shape2 = ShapeFactory.create_shape("rectangle", 10, 30)
 
-class Demo2:
-    @classmethod
-    def test01(cls):
-        print("调用类方法1")
-
-    @classmethod
-    def test02(cls):
-        print("调用类方法2")
-        cls.test01() # 未在方法内部，在外部就是属性。
-Demo2.test02()
-
-"""
-
-
-class Demo1:
-    def sum01(self, x, y):
-        if not isinstance(x):
-            x = int(x)
-        if not isinstance(y):
-            y = int(y)
-        return x, y
-
-    def sum02(self,x,y):
-        print("please input %d and %d" %(x,y))
-        return x + y
-
-cl = Demo1()
-x = cl.sum02(3,6)
-print(x)
+shape1.draw()
+se = shape2.draw()
+print(se)
