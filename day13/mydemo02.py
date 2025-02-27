@@ -1,41 +1,21 @@
-"""
-class Dog:
-    def sleep(self):
-        print("狗子在睡觉")
+class Father:
+    def __init__(self, name = "zhangsan"):
+        self.name = name
+        print("父类初始化方法")
 
-class Cat:
-    def sleep(self):
-        print("猫在睡觉")
+    def test_01(self):
+        print("父类test_01打印", self.name)
 
-def animal(obj):
-    print("动物们在睡觉")
-    cl = obj()
-    cl.sleep()
-if __name__ == '__main__':
-    animal(Dog)
-"""
+class Son(Father):
+    def __init__(self, name= "zhangsan ", age=20):
+        super().__init__(name)
+        self.age = age
 
 
-# class Demo:
-#     name = "zhangsan"
-#     age = 30
-#     def __init__(self, age, name):
-#        pass
-#
-# if __name__ == '__main__':
-#     cl = Demo()
-#     print(cl.__dict__)
 
-class Demo:
-    def __init__(self):
-        pass
-
+    def test_01(self):
+        print("子类test_01 打印", self.name,"年龄",self.age)
 
 if __name__ == '__main__':
-    cl = Demo()
-    print(cl.__dict__)
-    setattr(cl, "python", "51")
-    res = getattr(cl, "pytn","sss")
-    print(res)
-    res2 = hasattr(cl,"python")
-    print(res2)
+    cl = Son()
+    cl.test_01()
