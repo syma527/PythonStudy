@@ -1,0 +1,15 @@
+INFO     py52:handle_setup_sql.py:39 开始执行前置sql
+INFO     py52:handle_setup_sql.py:40 入参数据类型:<class 'str'>参数:["select seckill_sku_id from tz_seckill_sku where seckill_stocks>0 and seckill_id in (select seckill_id from tz_seckill where max_num = -1 and  status = 1 and seckill_total_stocks > 0 and seckill_origin_stocks > 0) order by seckill_sku_id desc  limit 1"]
+INFO     py52:handle_setup_sql.py:42 sql_list不为空，需要执行前置sql语句
+INFO     py52:handle_replace.py:93 开始执行sql语句替换方法replace_sql
+INFO     py52:handle_replace.py:106 sql语句不需要替换数据
+INFO     py52:handle_replace.py:109 返回的sql:select seckill_sku_id from tz_seckill_sku where seckill_stocks>0 and seckill_id in (select seckill_id from tz_seckill where max_num = -1 and  status = 1 and seckill_total_stocks > 0 and seckill_origin_stocks > 0) order by seckill_sku_id desc  limit 1
+INFO     py52:handle_setup_sql.py:49 前置sql执行结果[{'seckill_sku_id': 214}]
+INFO     py52:handle_setup_sql.py:56 前置sql设置全局变量key=seckill_sku_id,value=214
+INFO     py52:handle_replace.py:46 开始执行请求参数替换
+INFO     py52:handle_replace.py:47 入参数据类型:<class 'str'>,入参:{
+            "addrId": 0,
+            "prodCount": 1,
+            "seckillSkuId": "#seckill_sku_id#"
+}
+INFO     py52:handle_replace.py:80 替换请求参数后，返回json数据：{'addrId': 0, 'prodCount': 1, 'seckillSkuId': '214'}

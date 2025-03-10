@@ -1,0 +1,1319 @@
+>>>2022-09-02 20:53:08,556-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 20:53:08,556-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 20:53:08,556-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 20:53:08,556-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 20:53:08,556-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "principal": "18820992515",
+   "credentials": "123456",
+   "appType": 3,
+   "loginType": 0
+        } 
+>>>2022-09-02 20:53:08,557-py52-INFO-handle_replace.py: 不需要替换请求参数，直接返回json数据：{'principal': '18820992515', 'credentials': '123456', 'appType': 3, 'loginType': 0} 
+>>>2022-09-02 20:53:08,764-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 20:53:08,764-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 20:53:08,764-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 20:53:08,764-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 20:53:08,764-py52-INFO-handle_replace.py: 入参数据类型:<class 'NoneType'>,入参:None 
+>>>2022-09-02 20:53:08,764-py52-INFO-handle_replace.py: 请求参数为空，不需要替换参数 
+>>>2022-09-02 20:53:08,886-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 20:53:08,886-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'str'>参数:["select seckill_sku_id from tz_seckill_sku where seckill_stocks>0 and seckill_id in (select seckill_id from tz_seckill where max_num = -1 and  status = 1 and seckill_total_stocks > 0 and seckill_origin_stocks > 0) order by seckill_sku_id desc  limit 1"] 
+>>>2022-09-02 20:53:08,886-py52-INFO-handle_setup_sql.py: sql_list不为空，需要执行前置sql语句 
+>>>2022-09-02 20:53:08,886-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-02 20:53:08,887-py52-INFO-handle_replace.py: sql语句不需要替换数据 
+>>>2022-09-02 20:53:08,887-py52-INFO-handle_replace.py: 返回的sql:select seckill_sku_id from tz_seckill_sku where seckill_stocks>0 and seckill_id in (select seckill_id from tz_seckill where max_num = -1 and  status = 1 and seckill_total_stocks > 0 and seckill_origin_stocks > 0) order by seckill_sku_id desc  limit 1 
+>>>2022-09-02 20:53:08,915-py52-INFO-handle_setup_sql.py: 前置sql执行结果[{'seckill_sku_id': 196}] 
+>>>2022-09-02 20:53:08,915-py52-INFO-handle_setup_sql.py: 前置sql设置全局变量key=seckill_sku_id,value=196 
+>>>2022-09-02 20:53:08,915-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 20:53:08,915-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+            "addrId": 0,
+            "prodCount": 1,
+            "seckillSkuId": "#seckill_sku_id#"
+} 
+>>>2022-09-02 20:53:08,915-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'addrId': 0, 'prodCount': 1, 'seckillSkuId': '196'} 
+>>>2022-09-02 20:53:09,104-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 20:53:09,104-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 20:53:09,104-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 20:53:09,104-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 20:53:09,104-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+ "orderShopParam": {
+   "remarks": "",
+    "shopId": 1
+      },
+ "orderPath": "#order_path#"
+ } 
+>>>2022-09-02 20:53:09,104-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'orderShopParam': {'remarks': '', 'shopId': 1}, 'orderPath': '3CMTcpFQXfe'} 
+>>>2022-09-02 20:53:09,233-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 20:53:09,233-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 20:53:09,236-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 20:53:09,236-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 20:53:09,236-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "payType": 3,
+    "orderNumbers": "#orderNumbers#"
+ } 
+>>>2022-09-02 20:53:09,236-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'payType': 3, 'orderNumbers': '1565684255034707968'} 
+>>>2022-09-02 20:53:09,758-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-02 20:53:09,758-py52-INFO-handle_replace.py: sql语句需要进行参数替换 
+>>>2022-09-02 20:53:09,759-py52-INFO-handle_replace.py: 替换之前sql:select count(*) from tz_order where order_number = '#orderNumbers#' 
+>>>2022-09-02 20:53:09,759-py52-INFO-handle_replace.py: 替换之后sql:select count(*) from tz_order where order_number = '1565684255034707968' 
+>>>2022-09-02 20:53:09,759-py52-INFO-handle_replace.py: 返回的sql:select count(*) from tz_order where order_number = '1565684255034707968' 
+>>>2022-09-02 20:53:09,788-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 20:53:09,788-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 20:53:09,788-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 20:53:09,788-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 20:53:09,789-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+"payNo":"#orderNumbers#",
+"bizPayNo":"#time#",
+ "isPaySuccess":true
+ } 
+>>>2022-09-02 20:53:09,789-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'payNo': '1565684255034707968', 'bizPayNo': '1662123189789', 'isPaySuccess': True} 
+>>>2022-09-02 20:53:10,037-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-02 20:53:10,037-py52-INFO-handle_replace.py: sql语句需要进行参数替换 
+>>>2022-09-02 20:53:10,037-py52-INFO-handle_replace.py: 替换之前sql:select status from tz_order where order_number = '#orderNumbers#' 
+>>>2022-09-02 20:53:10,037-py52-INFO-handle_replace.py: 替换之后sql:select status from tz_order where order_number = '1565684255034707968' 
+>>>2022-09-02 20:53:10,037-py52-INFO-handle_replace.py: 返回的sql:select status from tz_order where order_number = '1565684255034707968' 
+>>>2022-09-02 21:47:47,197-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:47:47,197-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:47:47,197-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:47:47,197-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:47:47,198-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+ "t": "#time#",
+ "principal": "student",
+ "credentials": "123456a",
+ "sessionUUID": "#sessionUUID#",
+ "imageCode": "lemon"
+
+} 
+>>>2022-09-02 21:47:47,198-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'t': '1662126467198', 'principal': 'student', 'credentials': '123456a', 'sessionUUID': '9178e2a9-a9e5-43fc-81d5-0f385d6e2956', 'imageCode': 'lemon'} 
+>>>2022-09-02 21:47:47,201-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:47:47,201-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:47:47,201-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:47:47,201-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:47:47,201-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+ "t": "#time#",
+ "principal": "student",
+ "credentials": "121212",
+ "sessionUUID": "#sessionUUID#",
+ "imageCode": "lemon"
+
+} 
+>>>2022-09-02 21:47:47,201-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'t': '1662126467201', 'principal': 'student', 'credentials': '121212', 'sessionUUID': 'e68b3b0a-4053-4a9d-879b-78396cf2b532', 'imageCode': 'lemon'} 
+>>>2022-09-02 21:47:47,202-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:47:47,202-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:47:47,202-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:47:47,202-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:47:47,202-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+ "t": "#time#",
+ "principal": "student1111",
+ "credentials": "123456a",
+ "sessionUUID": "#sessionUUID#",
+ "imageCode": "lemon"
+
+} 
+>>>2022-09-02 21:47:47,202-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'t': '1662126467202', 'principal': 'student1111', 'credentials': '123456a', 'sessionUUID': '25ff42e5-829a-45ae-b537-74ef1db906c0', 'imageCode': 'lemon'} 
+>>>2022-09-02 21:47:49,829-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:47:49,829-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:47:49,829-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:47:49,829-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:47:49,829-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+ "t": "#time#",
+ "principal": "student",
+ "credentials": "123456a",
+ "sessionUUID": "#sessionUUID#",
+ "imageCode": "lemon"
+
+} 
+>>>2022-09-02 21:47:49,829-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'t': '1662126469829', 'principal': 'student', 'credentials': '123456a', 'sessionUUID': 'e719b762-b9c5-4afe-a3c1-70a5a5d47b81', 'imageCode': 'lemon'} 
+>>>2022-09-02 21:47:49,830-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:47:49,830-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:47:49,830-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:47:49,830-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:47:49,830-py52-INFO-handle_replace.py: 入参数据类型:<class 'NoneType'>,入参:None 
+>>>2022-09-02 21:47:49,830-py52-INFO-handle_replace.py: 请求参数为空，不需要替换参数 
+>>>2022-09-02 21:53:53,492-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:53:53,492-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:53:53,492-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:53:53,492-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:53:53,492-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+ "t": "#time#",
+ "principal": "student",
+ "credentials": "123456a",
+ "sessionUUID": "#sessionUUID#",
+ "imageCode": "lemon"
+
+} 
+>>>2022-09-02 21:53:53,492-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'t': '1662126833492', 'principal': 'student', 'credentials': '123456a', 'sessionUUID': '562157a4-3688-40ce-90c8-287f8ad282a1', 'imageCode': 'lemon'} 
+>>>2022-09-02 21:53:53,494-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:53:53,494-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:53:53,494-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:53:53,494-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:53:53,494-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+ "t": "#time#",
+ "principal": "student",
+ "credentials": "121212",
+ "sessionUUID": "#sessionUUID#",
+ "imageCode": "lemon"
+
+} 
+>>>2022-09-02 21:53:53,494-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'t': '1662126833494', 'principal': 'student', 'credentials': '121212', 'sessionUUID': 'b3f7ed21-c653-4c2e-8867-cce4882d2191', 'imageCode': 'lemon'} 
+>>>2022-09-02 21:53:53,495-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:53:53,496-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:53:53,496-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:53:53,496-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:53:53,496-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+ "t": "#time#",
+ "principal": "student1111",
+ "credentials": "123456a",
+ "sessionUUID": "#sessionUUID#",
+ "imageCode": "lemon"
+
+} 
+>>>2022-09-02 21:53:53,496-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'t': '1662126833496', 'principal': 'student1111', 'credentials': '123456a', 'sessionUUID': '08130bf2-6fd0-47a1-b54e-db1a23cf780a', 'imageCode': 'lemon'} 
+>>>2022-09-02 21:53:56,322-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:53:56,322-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:53:56,322-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:53:56,322-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:53:56,322-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+ "t": "#time#",
+ "principal": "student",
+ "credentials": "123456a",
+ "sessionUUID": "#sessionUUID#",
+ "imageCode": "lemon"
+
+} 
+>>>2022-09-02 21:53:56,322-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'t': '1662126836322', 'principal': 'student', 'credentials': '123456a', 'sessionUUID': '560fc9a3-9995-4be9-b1d0-0f22a781a57b', 'imageCode': 'lemon'} 
+>>>2022-09-02 21:53:56,323-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:53:56,323-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:53:56,323-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:53:56,323-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:53:56,323-py52-INFO-handle_replace.py: 入参数据类型:<class 'NoneType'>,入参:None 
+>>>2022-09-02 21:53:56,323-py52-INFO-handle_replace.py: 请求参数为空，不需要替换参数 
+>>>2022-09-02 21:53:58,709-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:53:58,709-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:53:58,710-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:53:58,710-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:53:58,710-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+ "t": "#time#",
+ "principal": "student",
+ "credentials": "123456a",
+ "sessionUUID": "#sessionUUID#",
+ "imageCode": "lemon"
+} 
+>>>2022-09-02 21:53:58,710-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'t': '1662126838710', 'principal': 'student', 'credentials': '123456a', 'sessionUUID': '19816469-1de3-46f5-811a-f6c66ea4bce0', 'imageCode': 'lemon'} 
+>>>2022-09-02 21:53:58,710-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:53:58,710-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:53:58,710-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:53:58,710-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:53:58,710-py52-INFO-handle_replace.py: 入参数据类型:<class 'NoneType'>,入参:None 
+>>>2022-09-02 21:53:58,710-py52-INFO-handle_replace.py: 请求参数为空，不需要替换参数 
+>>>2022-09-02 21:53:58,711-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:53:58,711-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:53:58,711-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:53:58,711-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:53:58,711-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+                  "t": "#time#",
+                  "prodName": "py52测试",
+                  "brief": "",
+                  "video": "",
+                  "prodNameEn": "py52测试",
+                  "prodNameCn": "py52测试",
+                  "contentEn": "",
+                  "contentCn": "<p><img src=\"https://img10.360buyimg.com/imgzone/jfs/t1/142476/27/23166/186549/614848d1Ee87e01cc/931c67cf16b3f9e0.jpg\" alt=\"描述1\" width=\"867\" height=\"1600\" /><img src=\"https://img10.360buyimg.com/imgzone/jfs/t1/109845/29/17835/167756/614848d1E824d0766/167f6932c38ee1b0.jpg\" alt=\"详情2\" width=\"990\" height=\"1128\" /></p>",
+                  "briefEn": "",
+                  "briefCn": "py52产品卖点",
+                  "pic": "#file_path#",
+                  "imgs": "#file_path#",
+                  "preSellStatus": 0,
+                  "preSellTime": null,
+                  "categoryId": 283,
+                  "skuList": [
+                    {
+                      "price": 0.01,
+                      "oriPrice": 0.01,
+                      "stocks": 10000,
+                      "skuScore": 1,
+                      "properties": "",
+                      "skuName": "",
+                      "prodName": "",
+                      "weight": 22,
+                      "volume": 23,
+                      "status": 1,
+                      "partyCode": "#party_code#",
+                      "prodNameCn": "py52商品名称",
+                      "prodNameEn": "py52商品名称"
+                    }
+                  ],
+                  "tagList": [
+                    1
+                  ],
+                  "content": "",
+                  "deliveryTemplateId": 1,
+                  "totalStocks": 10000,
+                  "price": 0.01,
+                  "oriPrice": 0.01,
+                  "deliveryModeVo": {
+                    "hasShopDelivery": true,
+                    "hasUserPickUp": false,
+                    "hasCityDelivery": false
+                  }
+                } 
+>>>2022-09-02 21:54:01,081-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:54:01,081-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:54:01,082-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:54:01,082-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:54:01,082-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+  "mobile": "#mobile#"
+} 
+>>>2022-09-02 21:54:01,110-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'mobile': '15101620929'} 
+>>>2022-09-02 21:54:01,110-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:54:01,110-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'str'>参数:["select mobile_code from  tz_sms_log where  user_phone='#mobile#' order by id desc limit 1"] 
+>>>2022-09-02 21:54:01,110-py52-INFO-handle_setup_sql.py: sql_list不为空，需要执行前置sql语句 
+>>>2022-09-02 21:54:01,110-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-02 21:54:01,110-py52-INFO-handle_replace.py: sql语句需要进行参数替换 
+>>>2022-09-02 21:54:01,110-py52-INFO-handle_replace.py: 替换之前sql:select mobile_code from  tz_sms_log where  user_phone='#mobile#' order by id desc limit 1 
+>>>2022-09-02 21:54:01,110-py52-INFO-handle_replace.py: 替换之后sql:select mobile_code from  tz_sms_log where  user_phone='15101620929' order by id desc limit 1 
+>>>2022-09-02 21:54:01,110-py52-INFO-handle_replace.py: 返回的sql:select mobile_code from  tz_sms_log where  user_phone='15101620929' order by id desc limit 1 
+>>>2022-09-02 21:54:01,164-py52-INFO-handle_setup_sql.py: 前置sql执行结果() 
+>>>2022-09-02 21:54:01,164-py52-INFO-handle_setup_sql.py: 前置sql语句执行后返回结果为空，不需要设置属性 
+>>>2022-09-02 21:54:01,164-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:54:01,164-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "mobile":  "#mobile#",
+    "validCode": "#mobile_code#"
+ } 
+>>>2022-09-02 21:54:01,165-py52-INFO-handle_replace.py: mobile已存在，不需要重新生成未注册的手机号 
+>>>2022-09-02 21:54:01,165-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:54:01,165-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:54:01,165-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:54:01,165-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:54:01,165-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+            "appType": 3,
+            "checkRegisterSmsFlag": "#sms_flag#",
+            "mobile": "#mobile#",
+            "userName": "#mobile#",
+            "password": "123456",
+            "registerOrBind": 1,
+            "validateType": 1
+        } 
+>>>2022-09-02 21:54:01,165-py52-INFO-handle_replace.py: mobile已存在，不需要重新生成未注册的手机号 
+>>>2022-09-02 21:54:01,165-py52-INFO-handle_replace.py: mobile已存在，不需要重新生成未注册的手机号 
+>>>2022-09-02 21:54:03,642-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:54:03,642-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:54:03,642-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:54:03,642-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:54:03,642-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+  "mobile": "#mobile#"
+} 
+>>>2022-09-02 21:54:03,671-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'mobile': '18103236400'} 
+>>>2022-09-02 21:54:03,857-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:54:03,857-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'str'>参数:["select mobile_code from  tz_sms_log where  user_phone='#mobile#' order by id desc limit 1"] 
+>>>2022-09-02 21:54:03,857-py52-INFO-handle_setup_sql.py: sql_list不为空，需要执行前置sql语句 
+>>>2022-09-02 21:54:03,857-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-02 21:54:03,857-py52-INFO-handle_replace.py: sql语句需要进行参数替换 
+>>>2022-09-02 21:54:03,857-py52-INFO-handle_replace.py: 替换之前sql:select mobile_code from  tz_sms_log where  user_phone='#mobile#' order by id desc limit 1 
+>>>2022-09-02 21:54:03,857-py52-INFO-handle_replace.py: 替换之后sql:select mobile_code from  tz_sms_log where  user_phone='18103236400' order by id desc limit 1 
+>>>2022-09-02 21:54:03,857-py52-INFO-handle_replace.py: 返回的sql:select mobile_code from  tz_sms_log where  user_phone='18103236400' order by id desc limit 1 
+>>>2022-09-02 21:54:03,895-py52-INFO-handle_setup_sql.py: 前置sql执行结果[{'mobile_code': '034578'}] 
+>>>2022-09-02 21:54:03,895-py52-INFO-handle_setup_sql.py: 前置sql设置全局变量key=mobile_code,value=034578 
+>>>2022-09-02 21:54:03,895-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:54:03,895-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "mobile":  "#mobile#",
+   "validCode": "#mobile_code#"
+ } 
+>>>2022-09-02 21:54:03,895-py52-INFO-handle_replace.py: mobile已存在，不需要重新生成未注册的手机号 
+>>>2022-09-02 21:54:03,898-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'mobile': '18103236400', 'validCode': '034578'} 
+>>>2022-09-02 21:54:04,030-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:54:04,030-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:54:04,030-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:54:04,030-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:54:04,030-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "appType": 3,
+   "checkRegisterSmsFlag": "#sms_flag#",
+    "mobile": "#mobile#",
+    "userName": "#mobile#",
+    "password": "123456",
+    "registerOrBind": 1,
+    "validateType": 1
+} 
+>>>2022-09-02 21:54:04,030-py52-INFO-handle_replace.py: mobile已存在，不需要重新生成未注册的手机号 
+>>>2022-09-02 21:54:04,030-py52-INFO-handle_replace.py: mobile已存在，不需要重新生成未注册的手机号 
+>>>2022-09-02 21:54:04,030-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'appType': 3, 'checkRegisterSmsFlag': 'deff1ffae4b049edb3005815287d8b6e', 'mobile': '18103236400', 'userName': '18103236400', 'password': '123456', 'registerOrBind': 1, 'validateType': 1} 
+>>>2022-09-02 21:54:04,257-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-02 21:54:04,257-py52-INFO-handle_replace.py: sql语句需要进行参数替换 
+>>>2022-09-02 21:54:04,257-py52-INFO-handle_replace.py: 替换之前sql:select count(*) from tz_user where user_mobile = '#mobile#' 
+>>>2022-09-02 21:54:04,258-py52-INFO-handle_replace.py: 替换之后sql:select count(*) from tz_user where user_mobile = '18103236400' 
+>>>2022-09-02 21:54:04,258-py52-INFO-handle_replace.py: 返回的sql:select count(*) from tz_user where user_mobile = '18103236400' 
+>>>2022-09-02 21:54:04,285-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:54:04,285-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:54:04,285-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:54:04,285-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:54:04,285-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "principal": "#mobile#",
+   "credentials": "123456",
+   "appType": 3,
+   "loginType": 0
+        } 
+>>>2022-09-02 21:54:04,287-py52-INFO-handle_replace.py: mobile已存在，不需要重新生成未注册的手机号 
+>>>2022-09-02 21:54:04,287-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'principal': '18103236400', 'credentials': '123456', 'appType': 3, 'loginType': 0} 
+>>>2022-09-02 21:54:06,850-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:54:06,850-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:54:06,851-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:54:06,851-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:54:06,851-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "principal": "18820992515",
+   "credentials": "123456",
+   "appType": 3,
+   "loginType": 0
+        } 
+>>>2022-09-02 21:54:06,851-py52-INFO-handle_replace.py: 不需要替换请求参数，直接返回json数据：{'principal': '18820992515', 'credentials': '123456', 'appType': 3, 'loginType': 0} 
+>>>2022-09-02 21:54:07,048-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:54:07,049-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:54:07,049-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:54:07,049-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:54:07,049-py52-INFO-handle_replace.py: 入参数据类型:<class 'NoneType'>,入参:None 
+>>>2022-09-02 21:54:07,049-py52-INFO-handle_replace.py: 请求参数为空，不需要替换参数 
+>>>2022-09-02 21:54:07,141-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:54:07,141-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'str'>参数:["select seckill_sku_id from tz_seckill_sku where seckill_stocks>0 and seckill_id in (select seckill_id from tz_seckill where max_num = -1 and  status = 1 and seckill_total_stocks > 0 and seckill_origin_stocks > 0) order by seckill_sku_id desc  limit 1"] 
+>>>2022-09-02 21:54:07,141-py52-INFO-handle_setup_sql.py: sql_list不为空，需要执行前置sql语句 
+>>>2022-09-02 21:54:07,141-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-02 21:54:07,141-py52-INFO-handle_replace.py: sql语句不需要替换数据 
+>>>2022-09-02 21:54:07,141-py52-INFO-handle_replace.py: 返回的sql:select seckill_sku_id from tz_seckill_sku where seckill_stocks>0 and seckill_id in (select seckill_id from tz_seckill where max_num = -1 and  status = 1 and seckill_total_stocks > 0 and seckill_origin_stocks > 0) order by seckill_sku_id desc  limit 1 
+>>>2022-09-02 21:54:07,170-py52-INFO-handle_setup_sql.py: 前置sql执行结果[{'seckill_sku_id': 197}] 
+>>>2022-09-02 21:54:07,170-py52-INFO-handle_setup_sql.py: 前置sql设置全局变量key=seckill_sku_id,value=197 
+>>>2022-09-02 21:54:07,170-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:54:07,170-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+            "addrId": 0,
+            "prodCount": 1,
+            "seckillSkuId": "#seckill_sku_id#"
+} 
+>>>2022-09-02 21:54:07,170-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'addrId': 0, 'prodCount': 1, 'seckillSkuId': '197'} 
+>>>2022-09-02 21:54:07,359-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:54:07,359-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:54:07,359-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:54:07,359-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:54:07,359-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+ "orderShopParam": {
+   "remarks": "",
+    "shopId": 1
+      },
+ "orderPath": "#order_path#"
+ } 
+>>>2022-09-02 21:54:07,359-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'orderShopParam': {'remarks': '', 'shopId': 1}, 'orderPath': '3CN09t1zHwq'} 
+>>>2022-09-02 21:54:07,576-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:54:07,576-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:54:07,576-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:54:07,576-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:54:07,576-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "payType": 3,
+    "orderNumbers": "#orderNumbers#"
+ } 
+>>>2022-09-02 21:54:07,576-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'payType': 3, 'orderNumbers': '1565699599237386240'} 
+>>>2022-09-02 21:54:08,132-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-02 21:54:08,132-py52-INFO-handle_replace.py: sql语句需要进行参数替换 
+>>>2022-09-02 21:54:08,132-py52-INFO-handle_replace.py: 替换之前sql:select count(*) from tz_order where order_number = '#orderNumbers#' 
+>>>2022-09-02 21:54:08,132-py52-INFO-handle_replace.py: 替换之后sql:select count(*) from tz_order where order_number = '1565699599237386240' 
+>>>2022-09-02 21:54:08,132-py52-INFO-handle_replace.py: 返回的sql:select count(*) from tz_order where order_number = '1565699599237386240' 
+>>>2022-09-02 21:54:08,160-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:54:08,160-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:54:08,160-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:54:08,160-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:54:08,160-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+"payNo":"#orderNumbers#",
+"bizPayNo":"#time#",
+ "isPaySuccess":true
+ } 
+>>>2022-09-02 21:54:08,160-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'payNo': '1565699599237386240', 'bizPayNo': '1662126848160', 'isPaySuccess': True} 
+>>>2022-09-02 21:54:08,408-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-02 21:54:08,408-py52-INFO-handle_replace.py: sql语句需要进行参数替换 
+>>>2022-09-02 21:54:08,408-py52-INFO-handle_replace.py: 替换之前sql:select status from tz_order where order_number = '#orderNumbers#' 
+>>>2022-09-02 21:54:08,408-py52-INFO-handle_replace.py: 替换之后sql:select status from tz_order where order_number = '1565699599237386240' 
+>>>2022-09-02 21:54:08,408-py52-INFO-handle_replace.py: 返回的sql:select status from tz_order where order_number = '1565699599237386240' 
+>>>2022-09-02 21:55:52,688-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:55:52,688-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:55:52,688-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:55:52,688-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:55:52,688-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+ "t": "#time#",
+ "principal": "student",
+ "credentials": "123456a",
+ "sessionUUID": "#sessionUUID#",
+ "imageCode": "lemon"
+
+} 
+>>>2022-09-02 21:55:52,688-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'t': '1662126952688', 'principal': 'student', 'credentials': '123456a', 'sessionUUID': '0169ed48-1756-4673-8ca9-c43fc4313e86', 'imageCode': 'lemon'} 
+>>>2022-09-02 21:55:52,690-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:55:52,690-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:55:52,690-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:55:52,690-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:55:52,690-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+ "t": "#time#",
+ "principal": "student",
+ "credentials": "121212",
+ "sessionUUID": "#sessionUUID#",
+ "imageCode": "lemon"
+
+} 
+>>>2022-09-02 21:55:52,690-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'t': '1662126952690', 'principal': 'student', 'credentials': '121212', 'sessionUUID': '732d5596-9d2e-4ede-824b-f719d38693c1', 'imageCode': 'lemon'} 
+>>>2022-09-02 21:55:52,690-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:55:52,691-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:55:52,691-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:55:52,691-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:55:52,691-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+ "t": "#time#",
+ "principal": "student1111",
+ "credentials": "123456a",
+ "sessionUUID": "#sessionUUID#",
+ "imageCode": "lemon"
+
+} 
+>>>2022-09-02 21:55:52,691-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'t': '1662126952691', 'principal': 'student1111', 'credentials': '123456a', 'sessionUUID': '348608b4-8ecc-46ca-873d-930741fc969f', 'imageCode': 'lemon'} 
+>>>2022-09-02 21:55:55,233-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:55:55,233-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:55:55,234-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:55:55,234-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:55:55,234-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+ "t": "#time#",
+ "principal": "student",
+ "credentials": "123456a",
+ "sessionUUID": "#sessionUUID#",
+ "imageCode": "lemon"
+
+} 
+>>>2022-09-02 21:55:55,234-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'t': '1662126955234', 'principal': 'student', 'credentials': '123456a', 'sessionUUID': '12a2d166-cccc-4e07-8f34-24fdd6942345', 'imageCode': 'lemon'} 
+>>>2022-09-02 21:55:55,234-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:55:55,234-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:55:55,234-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:55:55,235-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:55:55,235-py52-INFO-handle_replace.py: 入参数据类型:<class 'NoneType'>,入参:None 
+>>>2022-09-02 21:55:55,235-py52-INFO-handle_replace.py: 请求参数为空，不需要替换参数 
+>>>2022-09-02 21:55:57,641-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:55:57,641-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:55:57,641-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:55:57,641-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:55:57,641-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+ "t": "#time#",
+ "principal": "student",
+ "credentials": "123456a",
+ "sessionUUID": "#sessionUUID#",
+ "imageCode": "lemon"
+} 
+>>>2022-09-02 21:55:57,641-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'t': '1662126957641', 'principal': 'student', 'credentials': '123456a', 'sessionUUID': '7986510f-fcf0-4c06-8edd-efe21cc947c9', 'imageCode': 'lemon'} 
+>>>2022-09-02 21:55:57,642-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:55:57,642-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:55:57,642-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:55:57,642-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:55:57,642-py52-INFO-handle_replace.py: 入参数据类型:<class 'NoneType'>,入参:None 
+>>>2022-09-02 21:55:57,642-py52-INFO-handle_replace.py: 请求参数为空，不需要替换参数 
+>>>2022-09-02 21:55:57,642-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:55:57,642-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:55:57,642-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:55:57,642-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:55:57,643-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+                  "t": "#time#",
+                  "prodName": "py52测试",
+                  "brief": "",
+                  "video": "",
+                  "prodNameEn": "py52测试",
+                  "prodNameCn": "py52测试",
+                  "contentEn": "",
+                  "contentCn": "<p><img src=\"https://img10.360buyimg.com/imgzone/jfs/t1/142476/27/23166/186549/614848d1Ee87e01cc/931c67cf16b3f9e0.jpg\" alt=\"描述1\" width=\"867\" height=\"1600\" /><img src=\"https://img10.360buyimg.com/imgzone/jfs/t1/109845/29/17835/167756/614848d1E824d0766/167f6932c38ee1b0.jpg\" alt=\"详情2\" width=\"990\" height=\"1128\" /></p>",
+                  "briefEn": "",
+                  "briefCn": "py52产品卖点",
+                  "pic": "#file_path#",
+                  "imgs": "#file_path#",
+                  "preSellStatus": 0,
+                  "preSellTime": null,
+                  "categoryId": 283,
+                  "skuList": [
+                    {
+                      "price": 0.01,
+                      "oriPrice": 0.01,
+                      "stocks": 10000,
+                      "skuScore": 1,
+                      "properties": "",
+                      "skuName": "",
+                      "prodName": "",
+                      "weight": 22,
+                      "volume": 23,
+                      "status": 1,
+                      "partyCode": "#party_code#",
+                      "prodNameCn": "py52商品名称",
+                      "prodNameEn": "py52商品名称"
+                    }
+                  ],
+                  "tagList": [
+                    1
+                  ],
+                  "content": "",
+                  "deliveryTemplateId": 1,
+                  "totalStocks": 10000,
+                  "price": 0.01,
+                  "oriPrice": 0.01,
+                  "deliveryModeVo": {
+                    "hasShopDelivery": true,
+                    "hasUserPickUp": false,
+                    "hasCityDelivery": false
+                  }
+                } 
+>>>2022-09-02 21:56:00,176-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:56:00,176-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:56:00,176-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:56:00,176-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:56:00,176-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+  "mobile": "#mobile#"
+} 
+>>>2022-09-02 21:56:00,239-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'mobile': '13450720722'} 
+>>>2022-09-02 21:56:00,240-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:56:00,240-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'str'>参数:["select mobile_code from  tz_sms_log where  user_phone='#mobile#' order by id desc limit 1"] 
+>>>2022-09-02 21:56:00,240-py52-INFO-handle_setup_sql.py: sql_list不为空，需要执行前置sql语句 
+>>>2022-09-02 21:56:00,240-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-02 21:56:00,240-py52-INFO-handle_replace.py: sql语句需要进行参数替换 
+>>>2022-09-02 21:56:00,240-py52-INFO-handle_replace.py: 替换之前sql:select mobile_code from  tz_sms_log where  user_phone='#mobile#' order by id desc limit 1 
+>>>2022-09-02 21:56:00,240-py52-INFO-handle_replace.py: 替换之后sql:select mobile_code from  tz_sms_log where  user_phone='13450720722' order by id desc limit 1 
+>>>2022-09-02 21:56:00,240-py52-INFO-handle_replace.py: 返回的sql:select mobile_code from  tz_sms_log where  user_phone='13450720722' order by id desc limit 1 
+>>>2022-09-02 21:56:00,329-py52-INFO-handle_setup_sql.py: 前置sql执行结果() 
+>>>2022-09-02 21:56:00,329-py52-INFO-handle_setup_sql.py: 前置sql语句执行后返回结果为空，不需要设置属性 
+>>>2022-09-02 21:56:00,329-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:56:00,329-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "mobile":  "#mobile#",
+    "validCode": "#mobile_code#"
+ } 
+>>>2022-09-02 21:56:00,329-py52-INFO-handle_replace.py: mobile已存在，不需要重新生成未注册的手机号 
+>>>2022-09-02 21:56:00,330-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:56:00,331-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:56:00,331-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:56:00,331-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:56:00,331-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+            "appType": 3,
+            "checkRegisterSmsFlag": "#sms_flag#",
+            "mobile": "#mobile#",
+            "userName": "#mobile#",
+            "password": "123456",
+            "registerOrBind": 1,
+            "validateType": 1
+        } 
+>>>2022-09-02 21:56:00,332-py52-INFO-handle_replace.py: mobile已存在，不需要重新生成未注册的手机号 
+>>>2022-09-02 21:56:00,332-py52-INFO-handle_replace.py: mobile已存在，不需要重新生成未注册的手机号 
+>>>2022-09-02 21:56:03,076-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:56:03,076-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:56:03,076-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:56:03,076-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:56:03,076-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+  "mobile": "#mobile#"
+} 
+>>>2022-09-02 21:56:03,105-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'mobile': '13435153770'} 
+>>>2022-09-02 21:56:03,301-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:56:03,301-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'str'>参数:["select mobile_code from  tz_sms_log where  user_phone='#mobile#' order by id desc limit 1"] 
+>>>2022-09-02 21:56:03,301-py52-INFO-handle_setup_sql.py: sql_list不为空，需要执行前置sql语句 
+>>>2022-09-02 21:56:03,301-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-02 21:56:03,302-py52-INFO-handle_replace.py: sql语句需要进行参数替换 
+>>>2022-09-02 21:56:03,302-py52-INFO-handle_replace.py: 替换之前sql:select mobile_code from  tz_sms_log where  user_phone='#mobile#' order by id desc limit 1 
+>>>2022-09-02 21:56:03,302-py52-INFO-handle_replace.py: 替换之后sql:select mobile_code from  tz_sms_log where  user_phone='13435153770' order by id desc limit 1 
+>>>2022-09-02 21:56:03,302-py52-INFO-handle_replace.py: 返回的sql:select mobile_code from  tz_sms_log where  user_phone='13435153770' order by id desc limit 1 
+>>>2022-09-02 21:56:03,335-py52-INFO-handle_setup_sql.py: 前置sql执行结果[{'mobile_code': '864453'}] 
+>>>2022-09-02 21:56:03,335-py52-INFO-handle_setup_sql.py: 前置sql设置全局变量key=mobile_code,value=864453 
+>>>2022-09-02 21:56:03,336-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:56:03,336-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "mobile":  "#mobile#",
+   "validCode": "#mobile_code#"
+ } 
+>>>2022-09-02 21:56:03,336-py52-INFO-handle_replace.py: mobile已存在，不需要重新生成未注册的手机号 
+>>>2022-09-02 21:56:03,336-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'mobile': '13435153770', 'validCode': '864453'} 
+>>>2022-09-02 21:56:03,480-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:56:03,480-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:56:03,480-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:56:03,480-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:56:03,481-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "appType": 3,
+   "checkRegisterSmsFlag": "#sms_flag#",
+    "mobile": "#mobile#",
+    "userName": "#mobile#",
+    "password": "123456",
+    "registerOrBind": 1,
+    "validateType": 1
+} 
+>>>2022-09-02 21:56:03,481-py52-INFO-handle_replace.py: mobile已存在，不需要重新生成未注册的手机号 
+>>>2022-09-02 21:56:03,481-py52-INFO-handle_replace.py: mobile已存在，不需要重新生成未注册的手机号 
+>>>2022-09-02 21:56:03,481-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'appType': 3, 'checkRegisterSmsFlag': '5dff51ca94fd4fffa2c5cfbf8da13a9d', 'mobile': '13435153770', 'userName': '13435153770', 'password': '123456', 'registerOrBind': 1, 'validateType': 1} 
+>>>2022-09-02 21:56:03,764-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-02 21:56:03,764-py52-INFO-handle_replace.py: sql语句需要进行参数替换 
+>>>2022-09-02 21:56:03,764-py52-INFO-handle_replace.py: 替换之前sql:select count(*) from tz_user where user_mobile = '#mobile#' 
+>>>2022-09-02 21:56:03,764-py52-INFO-handle_replace.py: 替换之后sql:select count(*) from tz_user where user_mobile = '13435153770' 
+>>>2022-09-02 21:56:03,765-py52-INFO-handle_replace.py: 返回的sql:select count(*) from tz_user where user_mobile = '13435153770' 
+>>>2022-09-02 21:56:03,828-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:56:03,828-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:56:03,828-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:56:03,828-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:56:03,828-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "principal": "#mobile#",
+   "credentials": "123456",
+   "appType": 3,
+   "loginType": 0
+        } 
+>>>2022-09-02 21:56:03,828-py52-INFO-handle_replace.py: mobile已存在，不需要重新生成未注册的手机号 
+>>>2022-09-02 21:56:03,828-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'principal': '13435153770', 'credentials': '123456', 'appType': 3, 'loginType': 0} 
+>>>2022-09-02 21:56:06,946-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:56:06,946-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:56:06,946-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:56:06,946-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:56:06,946-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "principal": "18820992515",
+   "credentials": "123456",
+   "appType": 3,
+   "loginType": 0
+        } 
+>>>2022-09-02 21:56:06,946-py52-INFO-handle_replace.py: 不需要替换请求参数，直接返回json数据：{'principal': '18820992515', 'credentials': '123456', 'appType': 3, 'loginType': 0} 
+>>>2022-09-02 21:56:07,172-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:56:07,172-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:56:07,172-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:56:07,172-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:56:07,172-py52-INFO-handle_replace.py: 入参数据类型:<class 'NoneType'>,入参:None 
+>>>2022-09-02 21:56:07,172-py52-INFO-handle_replace.py: 请求参数为空，不需要替换参数 
+>>>2022-09-02 21:56:07,351-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:56:07,351-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'str'>参数:["select seckill_sku_id from tz_seckill_sku where seckill_stocks>0 and seckill_id in (select seckill_id from tz_seckill where max_num = -1 and  status = 1 and seckill_total_stocks > 0 and seckill_origin_stocks > 0) order by seckill_sku_id desc  limit 1"] 
+>>>2022-09-02 21:56:07,351-py52-INFO-handle_setup_sql.py: sql_list不为空，需要执行前置sql语句 
+>>>2022-09-02 21:56:07,351-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-02 21:56:07,351-py52-INFO-handle_replace.py: sql语句不需要替换数据 
+>>>2022-09-02 21:56:07,351-py52-INFO-handle_replace.py: 返回的sql:select seckill_sku_id from tz_seckill_sku where seckill_stocks>0 and seckill_id in (select seckill_id from tz_seckill where max_num = -1 and  status = 1 and seckill_total_stocks > 0 and seckill_origin_stocks > 0) order by seckill_sku_id desc  limit 1 
+>>>2022-09-02 21:56:07,397-py52-INFO-handle_setup_sql.py: 前置sql执行结果[{'seckill_sku_id': 197}] 
+>>>2022-09-02 21:56:07,397-py52-INFO-handle_setup_sql.py: 前置sql设置全局变量key=seckill_sku_id,value=197 
+>>>2022-09-02 21:56:07,397-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:56:07,397-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+            "addrId": 0,
+            "prodCount": 1,
+            "seckillSkuId": "#seckill_sku_id#"
+} 
+>>>2022-09-02 21:56:07,397-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'addrId': 0, 'prodCount': 1, 'seckillSkuId': '197'} 
+>>>2022-09-02 21:56:07,624-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:56:07,624-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:56:07,624-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:56:07,624-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:56:07,624-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+ "orderShopParam": {
+   "remarks": "",
+    "shopId": 1
+      },
+ "orderPath": "#order_path#"
+ } 
+>>>2022-09-02 21:56:07,624-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'orderShopParam': {'remarks': '', 'shopId': 1}, 'orderPath': '3CN0nHcvzFw'} 
+>>>2022-09-02 21:56:07,834-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:56:07,834-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:56:07,834-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:56:07,834-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:56:07,834-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "payType": 3,
+    "orderNumbers": "#orderNumbers#"
+ } 
+>>>2022-09-02 21:56:07,834-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'payType': 3, 'orderNumbers': '1565700103640190976'} 
+>>>2022-09-02 21:56:08,403-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-02 21:56:08,403-py52-INFO-handle_replace.py: sql语句需要进行参数替换 
+>>>2022-09-02 21:56:08,403-py52-INFO-handle_replace.py: 替换之前sql:select count(*) from tz_order where order_number = '#orderNumbers#' 
+>>>2022-09-02 21:56:08,403-py52-INFO-handle_replace.py: 替换之后sql:select count(*) from tz_order where order_number = '1565700103640190976' 
+>>>2022-09-02 21:56:08,403-py52-INFO-handle_replace.py: 返回的sql:select count(*) from tz_order where order_number = '1565700103640190976' 
+>>>2022-09-02 21:56:08,467-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:56:08,467-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:56:08,468-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:56:08,468-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:56:08,468-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+"payNo":"#orderNumbers#",
+"bizPayNo":"#time#",
+ "isPaySuccess":true
+ } 
+>>>2022-09-02 21:56:08,468-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'payNo': '1565700103640190976', 'bizPayNo': '1662126968468', 'isPaySuccess': True} 
+>>>2022-09-02 21:56:08,939-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-02 21:56:08,940-py52-INFO-handle_replace.py: sql语句需要进行参数替换 
+>>>2022-09-02 21:56:08,940-py52-INFO-handle_replace.py: 替换之前sql:select status from tz_order where order_number = '#orderNumbers#' 
+>>>2022-09-02 21:56:08,940-py52-INFO-handle_replace.py: 替换之后sql:select status from tz_order where order_number = '1565700103640190976' 
+>>>2022-09-02 21:56:08,940-py52-INFO-handle_replace.py: 返回的sql:select status from tz_order where order_number = '1565700103640190976' 
+>>>2022-09-02 21:58:30,151-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:58:30,151-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:58:30,151-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:58:30,151-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:58:30,151-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+ "t": "#time#",
+ "principal": "student",
+ "credentials": "123456a",
+ "sessionUUID": "#sessionUUID#",
+ "imageCode": "lemon"
+
+} 
+>>>2022-09-02 21:58:30,152-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'t': '1662127110152', 'principal': 'student', 'credentials': '123456a', 'sessionUUID': 'd857254b-79d3-4c05-a795-76d8334c3e5e', 'imageCode': 'lemon'} 
+>>>2022-09-02 21:58:30,154-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:58:30,154-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:58:30,154-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:58:30,154-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:58:30,154-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+ "t": "#time#",
+ "principal": "student",
+ "credentials": "121212",
+ "sessionUUID": "#sessionUUID#",
+ "imageCode": "lemon"
+
+} 
+>>>2022-09-02 21:58:30,154-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'t': '1662127110154', 'principal': 'student', 'credentials': '121212', 'sessionUUID': '8ddc3d55-5acc-497e-bedb-4ef6a3cdab43', 'imageCode': 'lemon'} 
+>>>2022-09-02 21:58:30,155-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:58:30,156-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:58:30,156-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:58:30,156-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:58:30,156-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+ "t": "#time#",
+ "principal": "student1111",
+ "credentials": "123456a",
+ "sessionUUID": "#sessionUUID#",
+ "imageCode": "lemon"
+
+} 
+>>>2022-09-02 21:58:30,156-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'t': '1662127110156', 'principal': 'student1111', 'credentials': '123456a', 'sessionUUID': '0e938f7b-2c77-42f1-8c10-4c9468ab7f02', 'imageCode': 'lemon'} 
+>>>2022-09-02 21:58:32,724-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:58:32,725-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:58:32,725-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:58:32,725-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:58:32,725-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+ "t": "#time#",
+ "principal": "student",
+ "credentials": "123456a",
+ "sessionUUID": "#sessionUUID#",
+ "imageCode": "lemon"
+
+} 
+>>>2022-09-02 21:58:32,725-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'t': '1662127112725', 'principal': 'student', 'credentials': '123456a', 'sessionUUID': 'a8f3369c-faf4-42c9-9a55-1480adff804c', 'imageCode': 'lemon'} 
+>>>2022-09-02 21:58:32,725-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:58:32,725-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:58:32,725-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:58:32,725-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:58:32,725-py52-INFO-handle_replace.py: 入参数据类型:<class 'NoneType'>,入参:None 
+>>>2022-09-02 21:58:32,726-py52-INFO-handle_replace.py: 请求参数为空，不需要替换参数 
+>>>2022-09-02 21:58:34,811-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:58:34,812-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:58:34,812-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:58:34,812-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:58:34,812-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+ "t": "#time#",
+ "principal": "student",
+ "credentials": "123456a",
+ "sessionUUID": "#sessionUUID#",
+ "imageCode": "lemon"
+} 
+>>>2022-09-02 21:58:34,812-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'t': '1662127114812', 'principal': 'student', 'credentials': '123456a', 'sessionUUID': 'e07ac297-6dbe-4138-8b7f-346f3657b884', 'imageCode': 'lemon'} 
+>>>2022-09-02 21:58:34,812-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:58:34,812-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:58:34,812-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:58:34,812-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:58:34,813-py52-INFO-handle_replace.py: 入参数据类型:<class 'NoneType'>,入参:None 
+>>>2022-09-02 21:58:34,813-py52-INFO-handle_replace.py: 请求参数为空，不需要替换参数 
+>>>2022-09-02 21:58:34,813-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:58:34,813-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:58:34,813-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:58:34,813-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:58:34,813-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+                  "t": "#time#",
+                  "prodName": "py52测试",
+                  "brief": "",
+                  "video": "",
+                  "prodNameEn": "py52测试",
+                  "prodNameCn": "py52测试",
+                  "contentEn": "",
+                  "contentCn": "<p><img src=\"https://img10.360buyimg.com/imgzone/jfs/t1/142476/27/23166/186549/614848d1Ee87e01cc/931c67cf16b3f9e0.jpg\" alt=\"描述1\" width=\"867\" height=\"1600\" /><img src=\"https://img10.360buyimg.com/imgzone/jfs/t1/109845/29/17835/167756/614848d1E824d0766/167f6932c38ee1b0.jpg\" alt=\"详情2\" width=\"990\" height=\"1128\" /></p>",
+                  "briefEn": "",
+                  "briefCn": "py52产品卖点",
+                  "pic": "#file_path#",
+                  "imgs": "#file_path#",
+                  "preSellStatus": 0,
+                  "preSellTime": null,
+                  "categoryId": 283,
+                  "skuList": [
+                    {
+                      "price": 0.01,
+                      "oriPrice": 0.01,
+                      "stocks": 10000,
+                      "skuScore": 1,
+                      "properties": "",
+                      "skuName": "",
+                      "prodName": "",
+                      "weight": 22,
+                      "volume": 23,
+                      "status": 1,
+                      "partyCode": "#party_code#",
+                      "prodNameCn": "py52商品名称",
+                      "prodNameEn": "py52商品名称"
+                    }
+                  ],
+                  "tagList": [
+                    1
+                  ],
+                  "content": "",
+                  "deliveryTemplateId": 1,
+                  "totalStocks": 10000,
+                  "price": 0.01,
+                  "oriPrice": 0.01,
+                  "deliveryModeVo": {
+                    "hasShopDelivery": true,
+                    "hasUserPickUp": false,
+                    "hasCityDelivery": false
+                  }
+                } 
+>>>2022-09-02 21:58:37,044-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:58:37,044-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:58:37,044-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:58:37,044-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:58:37,044-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+  "mobile": "#mobile#"
+} 
+>>>2022-09-02 21:58:37,084-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'mobile': '15390429727'} 
+>>>2022-09-02 21:58:37,084-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:58:37,084-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'str'>参数:["select mobile_code from  tz_sms_log where  user_phone='#mobile#' order by id desc limit 1"] 
+>>>2022-09-02 21:58:37,084-py52-INFO-handle_setup_sql.py: sql_list不为空，需要执行前置sql语句 
+>>>2022-09-02 21:58:37,084-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-02 21:58:37,084-py52-INFO-handle_replace.py: sql语句需要进行参数替换 
+>>>2022-09-02 21:58:37,084-py52-INFO-handle_replace.py: 替换之前sql:select mobile_code from  tz_sms_log where  user_phone='#mobile#' order by id desc limit 1 
+>>>2022-09-02 21:58:37,084-py52-INFO-handle_replace.py: 替换之后sql:select mobile_code from  tz_sms_log where  user_phone='15390429727' order by id desc limit 1 
+>>>2022-09-02 21:58:37,084-py52-INFO-handle_replace.py: 返回的sql:select mobile_code from  tz_sms_log where  user_phone='15390429727' order by id desc limit 1 
+>>>2022-09-02 21:58:37,151-py52-INFO-handle_setup_sql.py: 前置sql执行结果() 
+>>>2022-09-02 21:58:37,151-py52-INFO-handle_setup_sql.py: 前置sql语句执行后返回结果为空，不需要设置属性 
+>>>2022-09-02 21:58:37,151-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:58:37,151-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "mobile":  "#mobile#",
+    "validCode": "#mobile_code#"
+ } 
+>>>2022-09-02 21:58:37,151-py52-INFO-handle_replace.py: mobile已存在，不需要重新生成未注册的手机号 
+>>>2022-09-02 21:58:37,152-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:58:37,152-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:58:37,152-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:58:37,152-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:58:37,152-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+            "appType": 3,
+            "checkRegisterSmsFlag": "#sms_flag#",
+            "mobile": "#mobile#",
+            "userName": "#mobile#",
+            "password": "123456",
+            "registerOrBind": 1,
+            "validateType": 1
+        } 
+>>>2022-09-02 21:58:37,152-py52-INFO-handle_replace.py: mobile已存在，不需要重新生成未注册的手机号 
+>>>2022-09-02 21:58:37,152-py52-INFO-handle_replace.py: mobile已存在，不需要重新生成未注册的手机号 
+>>>2022-09-02 21:58:39,708-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:58:39,708-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:58:39,708-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:58:39,708-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:58:39,708-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+  "mobile": "#mobile#"
+} 
+>>>2022-09-02 21:58:39,747-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'mobile': '13919125310'} 
+>>>2022-09-02 21:58:39,910-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:58:39,910-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'str'>参数:["select mobile_code from  tz_sms_log where  user_phone='#mobile#' order by id desc limit 1"] 
+>>>2022-09-02 21:58:39,911-py52-INFO-handle_setup_sql.py: sql_list不为空，需要执行前置sql语句 
+>>>2022-09-02 21:58:39,911-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-02 21:58:39,911-py52-INFO-handle_replace.py: sql语句需要进行参数替换 
+>>>2022-09-02 21:58:39,911-py52-INFO-handle_replace.py: 替换之前sql:select mobile_code from  tz_sms_log where  user_phone='#mobile#' order by id desc limit 1 
+>>>2022-09-02 21:58:39,911-py52-INFO-handle_replace.py: 替换之后sql:select mobile_code from  tz_sms_log where  user_phone='13919125310' order by id desc limit 1 
+>>>2022-09-02 21:58:39,911-py52-INFO-handle_replace.py: 返回的sql:select mobile_code from  tz_sms_log where  user_phone='13919125310' order by id desc limit 1 
+>>>2022-09-02 21:58:39,949-py52-INFO-handle_setup_sql.py: 前置sql执行结果[{'mobile_code': '494389'}] 
+>>>2022-09-02 21:58:39,949-py52-INFO-handle_setup_sql.py: 前置sql设置全局变量key=mobile_code,value=494389 
+>>>2022-09-02 21:58:39,949-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:58:39,949-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "mobile":  "#mobile#",
+   "validCode": "#mobile_code#"
+ } 
+>>>2022-09-02 21:58:39,949-py52-INFO-handle_replace.py: mobile已存在，不需要重新生成未注册的手机号 
+>>>2022-09-02 21:58:39,949-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'mobile': '13919125310', 'validCode': '494389'} 
+>>>2022-09-02 21:58:40,093-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:58:40,093-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:58:40,093-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:58:40,093-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:58:40,093-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "appType": 3,
+   "checkRegisterSmsFlag": "#sms_flag#",
+    "mobile": "#mobile#",
+    "userName": "#mobile#",
+    "password": "123456",
+    "registerOrBind": 1,
+    "validateType": 1
+} 
+>>>2022-09-02 21:58:40,094-py52-INFO-handle_replace.py: mobile已存在，不需要重新生成未注册的手机号 
+>>>2022-09-02 21:58:40,094-py52-INFO-handle_replace.py: mobile已存在，不需要重新生成未注册的手机号 
+>>>2022-09-02 21:58:40,094-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'appType': 3, 'checkRegisterSmsFlag': '48370136fd4c48c1a0a9c51dc8211d50', 'mobile': '13919125310', 'userName': '13919125310', 'password': '123456', 'registerOrBind': 1, 'validateType': 1} 
+>>>2022-09-02 21:58:40,306-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-02 21:58:40,306-py52-INFO-handle_replace.py: sql语句需要进行参数替换 
+>>>2022-09-02 21:58:40,306-py52-INFO-handle_replace.py: 替换之前sql:select count(*) from tz_user where user_mobile = '#mobile#' 
+>>>2022-09-02 21:58:40,307-py52-INFO-handle_replace.py: 替换之后sql:select count(*) from tz_user where user_mobile = '13919125310' 
+>>>2022-09-02 21:58:40,307-py52-INFO-handle_replace.py: 返回的sql:select count(*) from tz_user where user_mobile = '13919125310' 
+>>>2022-09-02 21:58:40,345-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:58:40,345-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:58:40,345-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:58:40,345-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:58:40,345-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "principal": "#mobile#",
+   "credentials": "123456",
+   "appType": 3,
+   "loginType": 0
+        } 
+>>>2022-09-02 21:58:40,345-py52-INFO-handle_replace.py: mobile已存在，不需要重新生成未注册的手机号 
+>>>2022-09-02 21:58:40,345-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'principal': '13919125310', 'credentials': '123456', 'appType': 3, 'loginType': 0} 
+>>>2022-09-02 21:58:42,928-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:58:42,928-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:58:42,928-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:58:42,928-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:58:42,928-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "principal": "18820992515",
+   "credentials": "123456",
+   "appType": 3,
+   "loginType": 0
+        } 
+>>>2022-09-02 21:58:42,929-py52-INFO-handle_replace.py: 不需要替换请求参数，直接返回json数据：{'principal': '18820992515', 'credentials': '123456', 'appType': 3, 'loginType': 0} 
+>>>2022-09-02 21:58:43,108-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:58:43,108-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:58:43,108-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:58:43,109-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:58:43,109-py52-INFO-handle_replace.py: 入参数据类型:<class 'NoneType'>,入参:None 
+>>>2022-09-02 21:58:43,109-py52-INFO-handle_replace.py: 请求参数为空，不需要替换参数 
+>>>2022-09-02 21:58:43,217-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:58:43,217-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'str'>参数:["select seckill_sku_id from tz_seckill_sku where seckill_stocks>0 and seckill_id in (select seckill_id from tz_seckill where max_num = -1 and  status = 1 and seckill_total_stocks > 0 and seckill_origin_stocks > 0) order by seckill_sku_id desc  limit 1"] 
+>>>2022-09-02 21:58:43,217-py52-INFO-handle_setup_sql.py: sql_list不为空，需要执行前置sql语句 
+>>>2022-09-02 21:58:43,217-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-02 21:58:43,218-py52-INFO-handle_replace.py: sql语句不需要替换数据 
+>>>2022-09-02 21:58:43,218-py52-INFO-handle_replace.py: 返回的sql:select seckill_sku_id from tz_seckill_sku where seckill_stocks>0 and seckill_id in (select seckill_id from tz_seckill where max_num = -1 and  status = 1 and seckill_total_stocks > 0 and seckill_origin_stocks > 0) order by seckill_sku_id desc  limit 1 
+>>>2022-09-02 21:58:43,256-py52-INFO-handle_setup_sql.py: 前置sql执行结果[{'seckill_sku_id': 197}] 
+>>>2022-09-02 21:58:43,256-py52-INFO-handle_setup_sql.py: 前置sql设置全局变量key=seckill_sku_id,value=197 
+>>>2022-09-02 21:58:43,256-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:58:43,256-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+            "addrId": 0,
+            "prodCount": 1,
+            "seckillSkuId": "#seckill_sku_id#"
+} 
+>>>2022-09-02 21:58:43,256-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'addrId': 0, 'prodCount': 1, 'seckillSkuId': '197'} 
+>>>2022-09-02 21:58:43,431-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:58:43,431-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:58:43,431-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:58:43,431-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:58:43,431-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+ "orderShopParam": {
+   "remarks": "",
+    "shopId": 1
+      },
+ "orderPath": "#order_path#"
+ } 
+>>>2022-09-02 21:58:43,431-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'orderShopParam': {'remarks': '', 'shopId': 1}, 'orderPath': '3CN0FTcZzLu'} 
+>>>2022-09-02 21:58:43,634-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:58:43,635-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:58:43,635-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:58:43,635-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:58:43,635-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "payType": 3,
+    "orderNumbers": "#orderNumbers#"
+ } 
+>>>2022-09-02 21:58:43,635-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'payType': 3, 'orderNumbers': '1565700757163085824'} 
+>>>2022-09-02 21:58:44,172-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-02 21:58:44,173-py52-INFO-handle_replace.py: sql语句需要进行参数替换 
+>>>2022-09-02 21:58:44,173-py52-INFO-handle_replace.py: 替换之前sql:select count(*) from tz_order where order_number = '#orderNumbers#' 
+>>>2022-09-02 21:58:44,173-py52-INFO-handle_replace.py: 替换之后sql:select count(*) from tz_order where order_number = '1565700757163085824' 
+>>>2022-09-02 21:58:44,173-py52-INFO-handle_replace.py: 返回的sql:select count(*) from tz_order where order_number = '1565700757163085824' 
+>>>2022-09-02 21:58:44,211-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 21:58:44,211-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 21:58:44,211-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 21:58:44,211-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 21:58:44,211-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+"payNo":"#orderNumbers#",
+"bizPayNo":"#time#",
+ "isPaySuccess":true
+ } 
+>>>2022-09-02 21:58:44,211-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'payNo': '1565700757163085824', 'bizPayNo': '1662127124211', 'isPaySuccess': True} 
+>>>2022-09-02 21:58:44,434-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-02 21:58:44,434-py52-INFO-handle_replace.py: sql语句需要进行参数替换 
+>>>2022-09-02 21:58:44,435-py52-INFO-handle_replace.py: 替换之前sql:select status from tz_order where order_number = '#orderNumbers#' 
+>>>2022-09-02 21:58:44,435-py52-INFO-handle_replace.py: 替换之后sql:select status from tz_order where order_number = '1565700757163085824' 
+>>>2022-09-02 21:58:44,435-py52-INFO-handle_replace.py: 返回的sql:select status from tz_order where order_number = '1565700757163085824' 
+>>>2022-09-02 22:03:07,721-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 22:03:07,721-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 22:03:07,721-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 22:03:07,722-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 22:03:07,722-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+ "t": "#time#",
+ "principal": "student",
+ "credentials": "123456a",
+ "sessionUUID": "#sessionUUID#",
+ "imageCode": "lemon"
+
+} 
+>>>2022-09-02 22:03:07,722-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'t': '1662127387722', 'principal': 'student', 'credentials': '123456a', 'sessionUUID': '87138bf2-ac13-4caf-8648-ecbfefef8249', 'imageCode': 'lemon'} 
+>>>2022-09-02 22:03:07,723-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 22:03:07,723-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 22:03:07,723-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 22:03:07,723-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 22:03:07,723-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+ "t": "#time#",
+ "principal": "student",
+ "credentials": "121212",
+ "sessionUUID": "#sessionUUID#",
+ "imageCode": "lemon"
+
+} 
+>>>2022-09-02 22:03:07,723-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'t': '1662127387723', 'principal': 'student', 'credentials': '121212', 'sessionUUID': '5bb77f36-205f-41f0-8143-be54e08ae0cb', 'imageCode': 'lemon'} 
+>>>2022-09-02 22:03:07,724-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 22:03:07,724-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 22:03:07,724-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 22:03:07,724-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 22:03:07,724-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+ "t": "#time#",
+ "principal": "student1111",
+ "credentials": "123456a",
+ "sessionUUID": "#sessionUUID#",
+ "imageCode": "lemon"
+
+} 
+>>>2022-09-02 22:03:07,724-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'t': '1662127387724', 'principal': 'student1111', 'credentials': '123456a', 'sessionUUID': '1ca46e60-d346-4db7-bf8f-1d10c72c2e51', 'imageCode': 'lemon'} 
+>>>2022-09-02 22:03:10,113-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 22:03:10,113-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 22:03:10,113-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 22:03:10,113-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 22:03:10,113-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+ "t": "#time#",
+ "principal": "student",
+ "credentials": "123456a",
+ "sessionUUID": "#sessionUUID#",
+ "imageCode": "lemon"
+
+} 
+>>>2022-09-02 22:03:10,113-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'t': '1662127390113', 'principal': 'student', 'credentials': '123456a', 'sessionUUID': '8d292a77-d18b-468c-b81c-bace31b8c342', 'imageCode': 'lemon'} 
+>>>2022-09-02 22:03:10,114-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 22:03:10,114-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 22:03:10,114-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 22:03:10,114-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 22:03:10,114-py52-INFO-handle_replace.py: 入参数据类型:<class 'NoneType'>,入参:None 
+>>>2022-09-02 22:03:10,115-py52-INFO-handle_replace.py: 请求参数为空，不需要替换参数 
+>>>2022-09-02 22:03:12,481-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 22:03:12,481-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 22:03:12,481-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 22:03:12,481-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 22:03:12,482-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+ "t": "#time#",
+ "principal": "student",
+ "credentials": "123456a",
+ "sessionUUID": "#sessionUUID#",
+ "imageCode": "lemon"
+} 
+>>>2022-09-02 22:03:12,482-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'t': '1662127392482', 'principal': 'student', 'credentials': '123456a', 'sessionUUID': '4a271b0e-76d2-4793-ba27-18457c7a9fce', 'imageCode': 'lemon'} 
+>>>2022-09-02 22:03:12,482-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 22:03:12,482-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 22:03:12,482-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 22:03:12,482-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 22:03:12,482-py52-INFO-handle_replace.py: 入参数据类型:<class 'NoneType'>,入参:None 
+>>>2022-09-02 22:03:12,482-py52-INFO-handle_replace.py: 请求参数为空，不需要替换参数 
+>>>2022-09-02 22:03:12,483-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 22:03:12,483-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 22:03:12,483-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 22:03:12,483-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 22:03:12,483-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+                  "t": "#time#",
+                  "prodName": "py52测试",
+                  "brief": "",
+                  "video": "",
+                  "prodNameEn": "py52测试",
+                  "prodNameCn": "py52测试",
+                  "contentEn": "",
+                  "contentCn": "<p><img src=\"https://img10.360buyimg.com/imgzone/jfs/t1/142476/27/23166/186549/614848d1Ee87e01cc/931c67cf16b3f9e0.jpg\" alt=\"描述1\" width=\"867\" height=\"1600\" /><img src=\"https://img10.360buyimg.com/imgzone/jfs/t1/109845/29/17835/167756/614848d1E824d0766/167f6932c38ee1b0.jpg\" alt=\"详情2\" width=\"990\" height=\"1128\" /></p>",
+                  "briefEn": "",
+                  "briefCn": "py52产品卖点",
+                  "pic": "#file_path#",
+                  "imgs": "#file_path#",
+                  "preSellStatus": 0,
+                  "preSellTime": null,
+                  "categoryId": 283,
+                  "skuList": [
+                    {
+                      "price": 0.01,
+                      "oriPrice": 0.01,
+                      "stocks": 10000,
+                      "skuScore": 1,
+                      "properties": "",
+                      "skuName": "",
+                      "prodName": "",
+                      "weight": 22,
+                      "volume": 23,
+                      "status": 1,
+                      "partyCode": "#party_code#",
+                      "prodNameCn": "py52商品名称",
+                      "prodNameEn": "py52商品名称"
+                    }
+                  ],
+                  "tagList": [
+                    1
+                  ],
+                  "content": "",
+                  "deliveryTemplateId": 1,
+                  "totalStocks": 10000,
+                  "price": 0.01,
+                  "oriPrice": 0.01,
+                  "deliveryModeVo": {
+                    "hasShopDelivery": true,
+                    "hasUserPickUp": false,
+                    "hasCityDelivery": false
+                  }
+                } 
+>>>2022-09-02 22:03:14,651-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 22:03:14,651-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 22:03:14,651-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 22:03:14,651-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 22:03:14,651-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+  "mobile": "#mobile#"
+} 
+>>>2022-09-02 22:03:14,674-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'mobile': '18260360946'} 
+>>>2022-09-02 22:03:14,674-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 22:03:14,674-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'str'>参数:["select mobile_code from  tz_sms_log where  user_phone='#mobile#' order by id desc limit 1"] 
+>>>2022-09-02 22:03:14,674-py52-INFO-handle_setup_sql.py: sql_list不为空，需要执行前置sql语句 
+>>>2022-09-02 22:03:14,674-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-02 22:03:14,675-py52-INFO-handle_replace.py: sql语句需要进行参数替换 
+>>>2022-09-02 22:03:14,675-py52-INFO-handle_replace.py: 替换之前sql:select mobile_code from  tz_sms_log where  user_phone='#mobile#' order by id desc limit 1 
+>>>2022-09-02 22:03:14,675-py52-INFO-handle_replace.py: 替换之后sql:select mobile_code from  tz_sms_log where  user_phone='18260360946' order by id desc limit 1 
+>>>2022-09-02 22:03:14,675-py52-INFO-handle_replace.py: 返回的sql:select mobile_code from  tz_sms_log where  user_phone='18260360946' order by id desc limit 1 
+>>>2022-09-02 22:03:14,729-py52-INFO-handle_setup_sql.py: 前置sql执行结果() 
+>>>2022-09-02 22:03:14,729-py52-INFO-handle_setup_sql.py: 前置sql语句执行后返回结果为空，不需要设置属性 
+>>>2022-09-02 22:03:14,729-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 22:03:14,729-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "mobile":  "#mobile#",
+    "validCode": "#mobile_code#"
+ } 
+>>>2022-09-02 22:03:14,730-py52-INFO-handle_replace.py: mobile已存在，不需要重新生成未注册的手机号 
+>>>2022-09-02 22:03:14,730-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 22:03:14,730-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 22:03:14,730-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 22:03:14,730-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 22:03:14,730-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+            "appType": 3,
+            "checkRegisterSmsFlag": "#sms_flag#",
+            "mobile": "#mobile#",
+            "userName": "#mobile#",
+            "password": "123456",
+            "registerOrBind": 1,
+            "validateType": 1
+        } 
+>>>2022-09-02 22:03:14,730-py52-INFO-handle_replace.py: mobile已存在，不需要重新生成未注册的手机号 
+>>>2022-09-02 22:03:14,730-py52-INFO-handle_replace.py: mobile已存在，不需要重新生成未注册的手机号 
+>>>2022-09-02 22:03:17,167-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 22:03:17,167-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 22:03:17,167-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 22:03:17,167-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 22:03:17,167-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+  "mobile": "#mobile#"
+} 
+>>>2022-09-02 22:03:17,190-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'mobile': '14596500164'} 
+>>>2022-09-02 22:03:17,344-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 22:03:17,344-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'str'>参数:["select mobile_code from  tz_sms_log where  user_phone='#mobile#' order by id desc limit 1"] 
+>>>2022-09-02 22:03:17,344-py52-INFO-handle_setup_sql.py: sql_list不为空，需要执行前置sql语句 
+>>>2022-09-02 22:03:17,345-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-02 22:03:17,345-py52-INFO-handle_replace.py: sql语句需要进行参数替换 
+>>>2022-09-02 22:03:17,345-py52-INFO-handle_replace.py: 替换之前sql:select mobile_code from  tz_sms_log where  user_phone='#mobile#' order by id desc limit 1 
+>>>2022-09-02 22:03:17,345-py52-INFO-handle_replace.py: 替换之后sql:select mobile_code from  tz_sms_log where  user_phone='14596500164' order by id desc limit 1 
+>>>2022-09-02 22:03:17,345-py52-INFO-handle_replace.py: 返回的sql:select mobile_code from  tz_sms_log where  user_phone='14596500164' order by id desc limit 1 
+>>>2022-09-02 22:03:17,368-py52-INFO-handle_setup_sql.py: 前置sql执行结果[{'mobile_code': '382302'}] 
+>>>2022-09-02 22:03:17,368-py52-INFO-handle_setup_sql.py: 前置sql设置全局变量key=mobile_code,value=382302 
+>>>2022-09-02 22:03:17,368-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 22:03:17,368-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "mobile":  "#mobile#",
+   "validCode": "#mobile_code#"
+ } 
+>>>2022-09-02 22:03:17,368-py52-INFO-handle_replace.py: mobile已存在，不需要重新生成未注册的手机号 
+>>>2022-09-02 22:03:17,368-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'mobile': '14596500164', 'validCode': '382302'} 
+>>>2022-09-02 22:03:17,516-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 22:03:17,517-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 22:03:17,517-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 22:03:17,517-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 22:03:17,517-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "appType": 3,
+   "checkRegisterSmsFlag": "#sms_flag#",
+    "mobile": "#mobile#",
+    "userName": "#mobile#",
+    "password": "123456",
+    "registerOrBind": 1,
+    "validateType": 1
+} 
+>>>2022-09-02 22:03:17,517-py52-INFO-handle_replace.py: mobile已存在，不需要重新生成未注册的手机号 
+>>>2022-09-02 22:03:17,518-py52-INFO-handle_replace.py: mobile已存在，不需要重新生成未注册的手机号 
+>>>2022-09-02 22:03:17,518-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'appType': 3, 'checkRegisterSmsFlag': '0faf2d218c6f412ab6b767d627a0570d', 'mobile': '14596500164', 'userName': '14596500164', 'password': '123456', 'registerOrBind': 1, 'validateType': 1} 
+>>>2022-09-02 22:03:17,747-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-02 22:03:17,747-py52-INFO-handle_replace.py: sql语句需要进行参数替换 
+>>>2022-09-02 22:03:17,747-py52-INFO-handle_replace.py: 替换之前sql:select count(*) from tz_user where user_mobile = '#mobile#' 
+>>>2022-09-02 22:03:17,747-py52-INFO-handle_replace.py: 替换之后sql:select count(*) from tz_user where user_mobile = '14596500164' 
+>>>2022-09-02 22:03:17,747-py52-INFO-handle_replace.py: 返回的sql:select count(*) from tz_user where user_mobile = '14596500164' 
+>>>2022-09-02 22:03:17,770-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 22:03:17,770-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 22:03:17,770-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 22:03:17,770-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 22:03:17,770-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "principal": "#mobile#",
+   "credentials": "123456",
+   "appType": 3,
+   "loginType": 0
+        } 
+>>>2022-09-02 22:03:17,771-py52-INFO-handle_replace.py: mobile已存在，不需要重新生成未注册的手机号 
+>>>2022-09-02 22:03:17,771-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'principal': '14596500164', 'credentials': '123456', 'appType': 3, 'loginType': 0} 
+>>>2022-09-02 22:03:20,169-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 22:03:20,169-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 22:03:20,169-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 22:03:20,169-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 22:03:20,169-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "principal": "18820992515",
+   "credentials": "123456",
+   "appType": 3,
+   "loginType": 0
+        } 
+>>>2022-09-02 22:03:20,169-py52-INFO-handle_replace.py: 不需要替换请求参数，直接返回json数据：{'principal': '18820992515', 'credentials': '123456', 'appType': 3, 'loginType': 0} 
+>>>2022-09-02 22:03:20,333-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 22:03:20,333-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 22:03:20,334-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 22:03:20,334-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 22:03:20,334-py52-INFO-handle_replace.py: 入参数据类型:<class 'NoneType'>,入参:None 
+>>>2022-09-02 22:03:20,334-py52-INFO-handle_replace.py: 请求参数为空，不需要替换参数 
+>>>2022-09-02 22:03:20,431-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 22:03:20,432-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'str'>参数:["select seckill_sku_id from tz_seckill_sku where seckill_stocks>0 and seckill_id in (select seckill_id from tz_seckill where max_num = -1 and  status = 1 and seckill_total_stocks > 0 and seckill_origin_stocks > 0) order by seckill_sku_id desc  limit 1"] 
+>>>2022-09-02 22:03:20,432-py52-INFO-handle_setup_sql.py: sql_list不为空，需要执行前置sql语句 
+>>>2022-09-02 22:03:20,432-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-02 22:03:20,432-py52-INFO-handle_replace.py: sql语句不需要替换数据 
+>>>2022-09-02 22:03:20,432-py52-INFO-handle_replace.py: 返回的sql:select seckill_sku_id from tz_seckill_sku where seckill_stocks>0 and seckill_id in (select seckill_id from tz_seckill where max_num = -1 and  status = 1 and seckill_total_stocks > 0 and seckill_origin_stocks > 0) order by seckill_sku_id desc  limit 1 
+>>>2022-09-02 22:03:20,455-py52-INFO-handle_setup_sql.py: 前置sql执行结果[{'seckill_sku_id': 197}] 
+>>>2022-09-02 22:03:20,456-py52-INFO-handle_setup_sql.py: 前置sql设置全局变量key=seckill_sku_id,value=197 
+>>>2022-09-02 22:03:20,456-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 22:03:20,456-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+            "addrId": 0,
+            "prodCount": 1,
+            "seckillSkuId": "#seckill_sku_id#"
+} 
+>>>2022-09-02 22:03:20,456-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'addrId': 0, 'prodCount': 1, 'seckillSkuId': '197'} 
+>>>2022-09-02 22:03:20,651-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 22:03:20,651-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 22:03:20,651-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 22:03:20,651-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 22:03:20,651-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+ "orderShopParam": {
+   "remarks": "",
+    "shopId": 1
+      },
+ "orderPath": "#order_path#"
+ } 
+>>>2022-09-02 22:03:20,651-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'orderShopParam': {'remarks': '', 'shopId': 1}, 'orderPath': '3CN1cqFPqS4'} 
+>>>2022-09-02 22:03:20,868-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 22:03:20,868-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 22:03:20,868-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 22:03:20,869-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 22:03:20,869-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+   "payType": 3,
+    "orderNumbers": "#orderNumbers#"
+ } 
+>>>2022-09-02 22:03:20,869-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'payType': 3, 'orderNumbers': '1565701919916429312'} 
+>>>2022-09-02 22:03:21,322-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-02 22:03:21,322-py52-INFO-handle_replace.py: sql语句需要进行参数替换 
+>>>2022-09-02 22:03:21,322-py52-INFO-handle_replace.py: 替换之前sql:select count(*) from tz_order where order_number = '#orderNumbers#' 
+>>>2022-09-02 22:03:21,322-py52-INFO-handle_replace.py: 替换之后sql:select count(*) from tz_order where order_number = '1565701919916429312' 
+>>>2022-09-02 22:03:21,322-py52-INFO-handle_replace.py: 返回的sql:select count(*) from tz_order where order_number = '1565701919916429312' 
+>>>2022-09-02 22:03:21,345-py52-INFO-handle_setup_sql.py: 开始执行前置sql 
+>>>2022-09-02 22:03:21,346-py52-INFO-handle_setup_sql.py: 入参数据类型:<class 'NoneType'>参数:None 
+>>>2022-09-02 22:03:21,346-py52-INFO-handle_setup_sql.py: sql_list为空，不需要执行前置sql去获取数据 
+>>>2022-09-02 22:03:21,346-py52-INFO-handle_replace.py: 开始执行请求参数替换 
+>>>2022-09-02 22:03:21,346-py52-INFO-handle_replace.py: 入参数据类型:<class 'str'>,入参:{
+"payNo":"#orderNumbers#",
+"bizPayNo":"#time#",
+ "isPaySuccess":true
+ } 
+>>>2022-09-02 22:03:21,347-py52-INFO-handle_replace.py: 替换请求参数后，返回json数据：{'payNo': '1565701919916429312', 'bizPayNo': '1662127401347', 'isPaySuccess': True} 
+>>>2022-09-02 22:03:21,574-py52-INFO-handle_replace.py: 开始执行sql语句替换方法replace_sql 
+>>>2022-09-02 22:03:21,574-py52-INFO-handle_replace.py: sql语句需要进行参数替换 
+>>>2022-09-02 22:03:21,574-py52-INFO-handle_replace.py: 替换之前sql:select status from tz_order where order_number = '#orderNumbers#' 
+>>>2022-09-02 22:03:21,574-py52-INFO-handle_replace.py: 替换之后sql:select status from tz_order where order_number = '1565701919916429312' 
+>>>2022-09-02 22:03:21,574-py52-INFO-handle_replace.py: 返回的sql:select status from tz_order where order_number = '1565701919916429312' 
