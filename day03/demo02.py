@@ -56,7 +56,8 @@ not in ： 不是某某的成员
 
 test_str = "python52"
 print("h" not in test_str)
-
+res = test_str[-1:-6:-2]
+print(res)
 # {}  []  ()
 #test_str[start_index:stop_index:step]
 

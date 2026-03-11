@@ -91,3 +91,7 @@ for i in test_set:
     print(i)
 
 """
+test_set = {1,2,3,4,'a','a',1,2,3,4}
+for i in test_set:
+    print(i)
+

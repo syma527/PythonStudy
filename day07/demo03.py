@@ -65,11 +65,7 @@ else:
 
 """
 
-test_str = "python"
-from collections.abc import Iterable
 
-result = isinstance(test_str, Iterable)
-print(result)
 
 """
 test_str = "python"
@@ -138,10 +134,9 @@ for key,val in test_dict.items():
     print(key,val)
 """
 
-num = 0
-while num < 10:
-    print(f"num = {num}")
-    num += 1
-
+test_str = 'python'
+from collections.abc import Iterable
+result = isinstance(test_str,Iterable)
+print(result)
 
 

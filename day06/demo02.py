@@ -195,6 +195,8 @@ print(test_dict)
 
 """
 
+dict1 = {'host':'192.168.1.1',"port":'33601','user':'root','pwd':'test123'}
 
+dict2 = dict([('host','192.168.1.1'),('port','33601'),('user','root'),('pwd','test123')])
 
 
